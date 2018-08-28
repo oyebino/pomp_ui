@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="B_system"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="30.080">
+  <properties />
+  
+  
+            <testcase name="setPower" time="30.080" classname="com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_002_setPower_Test" />
+      
+</testsuite>

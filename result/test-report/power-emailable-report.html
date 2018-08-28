@@ -24,10 +24,39 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Role</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Role</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">49.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th>Authors</th><th># of<br/>Scenarios</th><th>Running Counts</th><th>Parameters</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Role &#8212; failed</th></tr>
+<tr class="failedodd"><td>com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test</td><td><a href="#m-1063406700"><b>delRoleSuccess</b>  </a></td><td>unknown</td><td class="numi">1</td><td>1</td><td></td><td>1535427320693</td><td class="numi">12756</td></tr>
+<tr><th colspan="5">Role &#8212; passed</th></tr>
+<tr class="passedodd"><td>com.wymall.test.testcases.system.role.RolePage_001_addRoleSuccess_Test</td><td><a href="#m373902673"><b>addRoleSuccess</b>  </a></td><td>unknown</td><td class="numi">1</td><td>1</td><td></td><td>1535427284721</td><td class="numi">12382</td></tr>
+<tr class="passedeven"><td>com.wymall.test.testcases.system.role.RolePage_002_settingRole_Test</td><td><a href="#m-1404467310"><b>settingRole</b>  </a></td><td>unknown</td><td class="numi">1</td><td>1</td><td></td><td>1535427297107</td><td class="numi">12175</td></tr>
+<tr class="passedodd"><td>com.wymall.test.testcases.system.role.RolePage_003_editRole_Test</td><td><a href="#m-1736519277"><b>editRole</b>  </a></td><td>unknown</td><td class="numi">1</td><td>1</td><td></td><td>1535427309283</td><td class="numi">11409</td></tr>
 </table>
 <h1>Role</h1>
+<h2 id="m-1063406700" name="m-1063406700" >com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test:delRoleSuccess</h2>
+<div>
+<h3>Test Messages</h3>
+<img src="../../result/screenshot/system/Role/004_delRoleSuccess/运行错误_2018_08_28_11_35_33.jpg"/><br/>
+<h3>Failure</h3>
+<div class="stacktrace">java.lang.AssertionError: 期望的文字是 [操1作成功] 但是找到了 [操作成功]
+	at com.wymall.test.utils.SeleniumUtil.isTextCorrect(SeleniumUtil.java:336)
+	at com.wymall.test.utils.actions.impl.CheckTipsText.doAction(CheckTipsText.java:23)
+	at com.wymall.test.utils.SuperAction.parseExcel(SuperAction.java:277)
+	at com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test.delRoleSuccess(RolePage_004_delRoleSuccess_Test.java:8)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m373902673" name="m373902673" >com.wymall.test.testcases.system.role.RolePage_001_addRoleSuccess_Test:addRoleSuccess</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m-1404467310" name="m-1404467310" >com.wymall.test.testcases.system.role.RolePage_002_settingRole_Test:settingRole</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m-1736519277" name="m-1736519277" >com.wymall.test.testcases.system.role.RolePage_003_editRole_Test:editRole</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

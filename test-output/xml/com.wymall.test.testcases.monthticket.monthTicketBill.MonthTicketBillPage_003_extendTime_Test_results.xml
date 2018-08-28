@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="D_monthticket"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="17.989">
+  <properties />
+  
+  
+            <testcase name="extendTime" time="17.989" classname="com.wymall.test.testcases.monthticket.monthTicketBill.MonthTicketBillPage_003_extendTime_Test" />
+      
+</testsuite>

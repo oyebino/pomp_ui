@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 sec - in TestSuite
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 66.198 sec <<< FAILURE! - in TestSuite
+delRoleSuccess(com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test)  Time elapsed: 13.085 sec  <<< FAILURE!
+java.lang.AssertionError: 期望的文字是 [操1作成功] 但是找到了 [操作成功]
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.wymall.test.utils.SeleniumUtil.isTextCorrect(SeleniumUtil.java:336)
+	at com.wymall.test.utils.actions.impl.CheckTipsText.doAction(CheckTipsText.java:23)
+	at com.wymall.test.utils.SuperAction.parseExcel(SuperAction.java:277)
+	at com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test.delRoleSuccess(RolePage_004_delRoleSuccess_Test.java:8)
+

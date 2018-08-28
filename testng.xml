@@ -17,9 +17,8 @@
 	<parameter name="waitMillisecondsForAlert" value="40000" />
 
 	<!-- 定义测试模块，用test标签包围 -->
-	
 
-
+<!--
 	<test name="Role" preserve-order="true">
 		<classes>
 			<class name="com.wymall.test.testcases.system.role.RolePage_001_addRoleSuccess_Test" />
@@ -28,7 +27,7 @@
 			<class name="com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test" />
 		</classes>
 	</test>
-
+-->
 <!--
 	<test name="A_parking" preserve-order="true">
 		<packages>

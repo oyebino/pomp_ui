@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="D_monthticket"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="36.846">
+  <properties />
+  
+  
+            <testcase name="editCarUserInfo" time="36.846" classname="com.wymall.test.testcases.monthticket.parkCustomerInfo.ParkCustomerInfoPage_002_editCarUserInfo_Test" />
+      
+</testsuite>

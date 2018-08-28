@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="C_perferential"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.336">
+  <properties />
+  
+  
+            <testcase name="returnVoucher" time="11.336" classname="com.wymall.test.testcases.preferential.sell.SellPage_002_returnVoucher_Test" />
+      
+</testsuite>

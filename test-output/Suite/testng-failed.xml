@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="com.wymall.test.testcases.preferential.business.BusinessPage_002_setStratup_Test">
+        <methods>
+          <include name="setStratup"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.business.BusinessPage_002_setStratup_Test -->
+      <class name="com.wymall.test.testcases.system.childOperator.ChildOperatorPage_005_bindingParking_Test">
+        <methods>
+          <include name="bindingParking"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.childOperator.ChildOperatorPage_005_bindingParking_Test -->
+      <class name="com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_004_setFrozen_Test">
+        <methods>
+          <include name="setFrozen"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_004_setFrozen_Test -->
+      <class name="com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_001_addMinProUser_Test">
+        <methods>
+          <include name="addMinProUser"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_001_addMinProUser_Test -->
+      <class name="com.wymall.test.testcases.preferential.voucher.VoucherPage_004_setStop_Test">
+        <methods>
+          <include name="setStop"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.voucher.VoucherPage_004_setStop_Test -->
+      <class name="com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_005_setStartuse_Test">
+        <methods>
+          <include name="setStartuse"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_005_setStartuse_Test -->
+      <class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_004_editParkingGroup_Test">
+        <methods>
+          <include name="editParkingGroup"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.parking_group.Parking_groupPage_004_editParkingGroup_Test -->
+      <class name="com.wymall.test.testcases.preferential.sell.SellPage_001_addSellTicket_Test">
+        <methods>
+          <include name="addSellTicket"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.sell.SellPage_001_addSellTicket_Test -->
+      <class name="com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_006_delMinProUser_Test">
+        <methods>
+          <include name="delMinProUser"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_006_delMinProUser_Test -->
+      <class name="com.wymall.test.testcases.system.childOperator.ChildOperatorPage_007_lockOperator_Test">
+        <methods>
+          <include name="lockOperator"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.childOperator.ChildOperatorPage_007_lockOperator_Test -->
+      <class name="com.wymall.test.testcases.preferential.business.BusinessPage_003_setStop_Test">
+        <methods>
+          <include name="setStop"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.business.BusinessPage_003_setStop_Test -->
+      <class name="com.wymall.test.testcases.preferential.voucher.VoucherPage_001_addVoucher_Test">
+        <methods>
+          <include name="addVoucher"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.voucher.VoucherPage_001_addVoucher_Test -->
+      <class name="com.wymall.test.testcases.system.user.UserPage_004_editPassword_Test">
+        <methods>
+          <include name="editPassword"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.user.UserPage_004_editPassword_Test -->
+      <class name="com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test">
+        <methods>
+          <include name="delRoleSuccess"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test -->
+      <class name="com.wymall.test.testcases.preferential.voucher.VoucherPage_005_delVoucher_Test">
+        <methods>
+          <include name="delVoucher"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.voucher.VoucherPage_005_delVoucher_Test -->
+      <class name="com.wymall.test.testcases.system.childOperator.ChildOperatorPage_004_detailOperator_Test">
+        <methods>
+          <include name="detailOperator"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.childOperator.ChildOperatorPage_004_detailOperator_Test -->
+      <class name="com.wymall.test.testcases.system.role.RolePage_003_editRole_Test">
+        <methods>
+          <include name="editRole"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.role.RolePage_003_editRole_Test -->
+      <class name="com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_002_setPower_Test">
+        <methods>
+          <include name="setPower"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_002_setPower_Test -->
+      <class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_003_checkUser_Test">
+        <methods>
+          <include name="checkUser"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.parking_group.Parking_groupPage_003_checkUser_Test -->
+      <class name="com.wymall.test.testcases.system.role.RolePage_001_addRoleSuccess_Test">
+        <methods>
+          <include name="addRoleSuccess"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.role.RolePage_001_addRoleSuccess_Test -->
+      <class name="com.wymall.test.testcases.system.user.UserPage_002_setRole_Test">
+        <methods>
+          <include name="setRole"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.user.UserPage_002_setRole_Test -->
+      <class name="com.wymall.test.testcases.system.role.RolePage_002_settingRole_Test">
+        <methods>
+          <include name="settingRole"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.role.RolePage_002_settingRole_Test -->
+      <class name="com.wymall.test.testcases.preferential.voucher.VoucherPage_002_editVoucher_Test">
+        <methods>
+          <include name="editVoucher"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.voucher.VoucherPage_002_editVoucher_Test -->
+      <class name="com.wymall.test.testcases.preferential.business.BusinessPage_005_delBusiness_Test">
+        <methods>
+          <include name="delBusiness"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.business.BusinessPage_005_delBusiness_Test -->
+      <class name="com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_003_editUser_Test">
+        <methods>
+          <include name="editUser"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_003_editUser_Test -->
+      <class name="com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_003_setStratup_Test">
+        <methods>
+          <include name="setStratup"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_003_setStratup_Test -->
+      <class name="com.wymall.test.testcases.system.user.UserPage_006_delUser_Test">
+        <methods>
+          <include name="delUser"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.user.UserPage_006_delUser_Test -->
+      <class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_005_delParkingGroup_Test">
+        <methods>
+          <include name="delParkingGroup"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.parking_group.Parking_groupPage_005_delParkingGroup_Test -->
+      <class name="com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_004_setStop_Test">
+        <methods>
+          <include name="setStop"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_004_setStop_Test -->
+      <class name="com.wymall.test.testcases.preferential.voucher.VoucherPage_003_setStratup_Test">
+        <methods>
+          <include name="setStratup"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.voucher.VoucherPage_003_setStratup_Test -->
+      <class name="com.wymall.test.testcases.preferential.business.BusinessPage_004_editBusiness_Test">
+        <methods>
+          <include name="editBusiness"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.business.BusinessPage_004_editBusiness_Test -->
+      <class name="com.wymall.test.testcases.system.childOperator.ChildOperatorPage_003_editOperator_Test">
+        <methods>
+          <include name="editOperator"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.childOperator.ChildOperatorPage_003_editOperator_Test -->
+      <class name="com.wymall.test.testcases.system.childOperator.ChildOperatorPage_008_delOperator_Test">
+        <methods>
+          <include name="delOperator"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.childOperator.ChildOperatorPage_008_delOperator_Test -->
+      <class name="com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_005_filterPayVorcher_Test">
+        <methods>
+          <include name="filterPayVorcher"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_005_filterPayVorcher_Test -->
+      <class name="com.wymall.test.testcases.preferential.sell.SellPage_002_returnVoucher_Test">
+        <methods>
+          <include name="returnVoucher"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.sell.SellPage_002_returnVoucher_Test -->
+      <class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_002_buidingParking_Test">
+        <methods>
+          <include name="buidingParking"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.parking_group.Parking_groupPage_002_buidingParking_Test -->
+      <class name="com.wymall.test.base.NewTest">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.wymall.test.base.NewTest -->
+      <class name="com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_006_delPayVoucher_Test">
+        <methods>
+          <include name="delPayVoucher"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_006_delPayVoucher_Test -->
+      <class name="com.wymall.test.testcases.system.user.UserPage_001_addUser_Test">
+        <methods>
+          <include name="addUser"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.user.UserPage_001_addUser_Test -->
+      <class name="com.wymall.test.testcases.system.user.UserPage_005_editUser_Test">
+        <methods>
+          <include name="editUser"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.user.UserPage_005_editUser_Test -->
+      <class name="com.wymall.test.testcases.system.user.UserPage_003_setParkingGroup_Test">
+        <methods>
+          <include name="setParkingGroup"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.user.UserPage_003_setParkingGroup_Test -->
+      <class name="com.wymall.test.testcases.system.childOperator.ChildOperatorPage_002_unlockOperator_Test">
+        <methods>
+          <include name="unlockOperator"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.childOperator.ChildOperatorPage_002_unlockOperator_Test -->
+      <class name="com.wymall.test.testcases.system.childOperator.ChildOperatorPage_006_setPassword_Test">
+        <methods>
+          <include name="setPassword"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.childOperator.ChildOperatorPage_006_setPassword_Test -->
+      <class name="com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_002_editPayVoucher_Test">
+        <methods>
+          <include name="editPayVoucher"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_002_editPayVoucher_Test -->
+      <class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_001_addParkingGroup_Test">
+        <methods>
+          <include name="addParkingGroup"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.parking_group.Parking_groupPage_001_addParkingGroup_Test -->
+      <class name="com.wymall.test.testcases.preferential.business.BusinessPage_001_addBussiness_Test">
+        <methods>
+          <include name="addBussiness"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.business.BusinessPage_001_addBussiness_Test -->
+      <class name="com.wymall.test.testcases.system.childOperator.ChildOperatorPage_001_addChildOperator_Test">
+        <methods>
+          <include name="addChildOperator"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.system.childOperator.ChildOperatorPage_001_addChildOperator_Test -->
+      <class name="com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_001_addPayVoucher_Test">
+        <methods>
+          <include name="addPayVoucher"/>
+        </methods>
+      </class> <!-- com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_001_addPayVoucher_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="B_system"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="9.756">
+  <properties />
+  
+  
+            <testcase name="checkUser" time="9.756" classname="com.wymall.test.testcases.system.parking_group.Parking_groupPage_003_checkUser_Test" />
+      
+</testsuite>

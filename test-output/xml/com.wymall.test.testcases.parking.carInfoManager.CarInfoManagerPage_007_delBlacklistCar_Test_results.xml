@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="A_parking"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.445">
+  <properties />
+  
+  
+            <testcase name="delBlacklistCar" time="10.445" classname="com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_007_delBlacklistCar_Test" />
+      
+</testsuite>

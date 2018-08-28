@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="A_parking"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="23.540">
+  <properties />
+  
+  
+            <testcase name="addSpecialTypeCar" time="23.540" classname="com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_008_addSpecialTypeCar_Test" />
+      
+</testsuite>

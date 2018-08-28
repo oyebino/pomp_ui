@@ -1,2 +1,2 @@
-set JAVA_HOME=D:\Program Files\Java\jdk1.8.0_144
-mvn install
+set JAVA_HOME=D:\java1.8
+mvn test
