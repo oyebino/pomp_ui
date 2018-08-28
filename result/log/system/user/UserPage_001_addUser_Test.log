@@ -1,0 +1,77 @@
+[2018-08-24 11:39:35] [INFO] 当前操作系统是:[Windows 7]
+[2018-08-24 11:39:35] [INFO] 启动测试浏览器：[chrome]
+[2018-08-24 11:39:39] [INFO] 最大化浏览器:chrome
+[2018-08-24 11:39:43] [INFO] 打开测试页面:[http://47.106.221.58:5002/#/login]
+[2018-08-24 11:39:43] [INFO] 开始查找元素[By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:39:43] [INFO] 找到了元素 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:39:44] [INFO] 输入：[autotest1] 到 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:39:44] [INFO] 开始查找元素[By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:39:45] [INFO] 找到了元素 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:39:46] [INFO] 输入：[123456] 到 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:39:46] [INFO] 开始查找元素[By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:39:46] [INFO] 找到了元素 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:39:47] [INFO] 输入：[9999] 到 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:39:47] [INFO] 开始查找元素[By.xpath: //span[text()='登录']]
+[2018-08-24 11:39:47] [INFO] 找到了元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:39:47] [INFO] 点击元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:39:51] [INFO] 页面加载完成
+[2018-08-24 11:39:51] [INFO] addUser 测试用例开始执行！
+[2018-08-24 11:39:51] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第1行步骤...
+[2018-08-24 11:39:51] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "系统管理")]]
+[2018-08-24 11:39:53] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "系统管理")]]
+[2018-08-24 11:39:53] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第2行步骤...
+[2018-08-24 11:39:53] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "系统管理")]]
+[2018-08-24 11:39:53] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "系统管理")]]
+[2018-08-24 11:39:53] [INFO] 点击元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "系统管理")]]
+[2018-08-24 11:39:53] [INFO] 页面加载完成
+[2018-08-24 11:39:53] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第3行步骤...
+[2018-08-24 11:39:53] [INFO] 开始查找元素[By.xpath: //li/a[@id='2100']]
+[2018-08-24 11:39:53] [INFO] 找到了元素 [By.xpath: //li/a[@id='2100']]
+[2018-08-24 11:39:53] [INFO] 点击元素 [By.xpath: //li/a[@id='2100']]
+[2018-08-24 11:39:55] [INFO] 页面加载完成
+[2018-08-24 11:39:55] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第4行步骤...
+[2018-08-24 11:39:55] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第5行步骤...
+[2018-08-24 11:39:55] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//a[contains(text(), "新增")]]
+[2018-08-24 11:39:55] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//a[contains(text(), "新增")]]
+[2018-08-24 11:39:55] [INFO] 点击元素 [By.xpath: //*[@id="app"]//a[contains(text(), "新增")]]
+[2018-08-24 11:39:56] [INFO] 页面加载完成
+[2018-08-24 11:39:56] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第6行步骤...
+[2018-08-24 11:39:56] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'用户名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:39:56] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'用户名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:39:57] [INFO] 输入：[UIauto] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'用户名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:39:57] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第7行步骤...
+[2018-08-24 11:39:57] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'用户密码')]/following-sibling::*[1]//input]
+[2018-08-24 11:39:57] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'用户密码')]/following-sibling::*[1]//input]
+[2018-08-24 11:39:58] [INFO] 输入：[123456] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'用户密码')]/following-sibling::*[1]//input]
+[2018-08-24 11:39:58] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第8行步骤...
+[2018-08-24 11:39:58] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'确认密码')]/following-sibling::*[1]//input]
+[2018-08-24 11:39:58] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'确认密码')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:00] [INFO] 输入：[123456] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'确认密码')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:00] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第9行步骤...
+[2018-08-24 11:40:00] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'用户昵称')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:00] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'用户昵称')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:01] [INFO] 输入：[UI用户] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'用户昵称')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:01] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第10行步骤...
+[2018-08-24 11:40:01] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'手机号码')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:01] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'手机号码')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:02] [INFO] 输入：[13800138000] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'手机号码')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:02] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第11行步骤...
+[2018-08-24 11:40:02] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'电子邮箱')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:02] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'电子邮箱')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:04] [INFO] 输入：[ake@163.com] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'电子邮箱')]/following-sibling::*[1]//input]
+[2018-08-24 11:40:04] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第12行步骤...
+[2018-08-24 11:40:04] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'地址')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:40:04] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'地址')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:40:05] [INFO] 输入：[桂城街道瀚天科技城] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'地址')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:40:05] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第13行步骤...
+[2018-08-24 11:40:05] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第14行步骤...
+[2018-08-24 11:40:05] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:40:05] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:40:05] [INFO] 点击元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:40:06] [INFO] 页面加载完成
+[2018-08-24 11:40:06] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第15行步骤...
+[2018-08-24 11:40:07] [INFO] 页面元素:[By.xpath: //div[@class='toast-wrapper']]已变化
+[2018-08-24 11:40:07] [INFO] 找到了期望的文字: [操作成功]
+[2018-08-24 11:40:07] [INFO] 正在解析excel:[system/User.xlsx]中的sheet(用例)：[001_addUser]的第16行步骤...
+[2018-08-24 11:40:07] [INFO] addUser 测试用例执行成功！
+[2018-08-24 11:40:09] [INFO] 浏览器退出

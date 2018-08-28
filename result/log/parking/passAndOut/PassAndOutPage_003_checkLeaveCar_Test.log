@@ -1,0 +1,79 @@
+[2018-08-24 16:38:42] [INFO] 当前操作系统是:[Windows 7]
+[2018-08-24 16:38:42] [INFO] 启动测试浏览器：[chrome]
+[2018-08-24 16:38:47] [INFO] 最大化浏览器:chrome
+[2018-08-24 16:38:50] [INFO] 打开测试页面:[http://47.106.221.58:5002/#/login]
+[2018-08-24 16:38:50] [INFO] 开始查找元素[By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 16:38:50] [INFO] 找到了元素 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 16:38:51] [INFO] 输入：[autotest1] 到 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 16:38:51] [INFO] 开始查找元素[By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 16:38:51] [INFO] 找到了元素 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 16:38:52] [INFO] 输入：[123456] 到 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 16:38:52] [INFO] 开始查找元素[By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 16:38:52] [INFO] 找到了元素 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 16:38:54] [INFO] 输入：[9999] 到 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 16:38:54] [INFO] 开始查找元素[By.xpath: //span[text()='登录']]
+[2018-08-24 16:38:54] [INFO] 找到了元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 16:38:54] [INFO] 点击元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 16:38:58] [INFO] 页面加载完成
+[2018-08-24 16:38:58] [INFO] checkLeaveCar 测试用例开始执行！
+[2018-08-24 16:38:58] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第1行步骤...
+[2018-08-24 16:38:58] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "车场管理")]]
+[2018-08-24 16:38:59] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "车场管理")]]
+[2018-08-24 16:38:59] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第2行步骤...
+[2018-08-24 16:38:59] [INFO] 没有【模拟进出场】浏览器窗口...重新打开..
+[2018-08-24 16:39:00] [INFO] 执行JavaScript语句：[window.open('http://172.18.40.8:9009');]
+[2018-08-24 16:39:02] [INFO] 开始查找元素[By.xpath: //input[@name='carNo']]
+[2018-08-24 16:39:02] [INFO] 找到了元素 [By.xpath: //input[@name='carNo']]
+[2018-08-24 16:39:04] [INFO] 输入：[粤Z26883] 到 [By.xpath: //input[@name='carNo']]
+[2018-08-24 16:39:04] [INFO] 开始查找元素[By.xpath: //input[@name='mockType']]
+[2018-08-24 16:39:04] [INFO] 找到了元素 [By.xpath: //input[@name='mockType']]
+[2018-08-24 16:39:05] [INFO] 输入：[1] 到 [By.xpath: //input[@name='mockType']]
+[2018-08-24 16:39:06] [INFO] 找到了期望的文字: [成功]
+[2018-08-24 16:39:06] [INFO] 粤Z26883:进出场成功
+[2018-08-24 16:39:06] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第3行步骤...
+[2018-08-24 16:39:06] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "车场管理")]]
+[2018-08-24 16:39:06] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "车场管理")]]
+[2018-08-24 16:39:06] [INFO] 点击元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "车场管理")]]
+[2018-08-24 16:39:07] [INFO] 页面加载完成
+[2018-08-24 16:39:07] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第4行步骤...
+[2018-08-24 16:39:07] [INFO] 开始查找元素[By.xpath: //li/a[@id='21000']]
+[2018-08-24 16:39:07] [INFO] 找到了元素 [By.xpath: //li/a[@id='21000']]
+[2018-08-24 16:39:07] [INFO] 点击元素 [By.xpath: //li/a[@id='21000']]
+[2018-08-24 16:39:08] [INFO] 页面加载完成
+[2018-08-24 16:39:08] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第5行步骤...
+[2018-08-24 16:39:08] [INFO] 开始查找元素[By.xpath: //li/a[@id='21200']]
+[2018-08-24 16:39:08] [INFO] 找到了元素 [By.xpath: //li/a[@id='21200']]
+[2018-08-24 16:39:08] [INFO] 点击元素 [By.xpath: //li/a[@id='21200']]
+[2018-08-24 16:39:12] [INFO] 页面加载完成
+[2018-08-24 16:39:12] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第6行步骤...
+[2018-08-24 16:39:12] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第7行步骤...
+[2018-08-24 16:39:15] [INFO] 暂停:3秒
+[2018-08-24 16:39:15] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第8行步骤...
+[2018-08-24 16:39:17] [INFO] 你选择了：车牌号
+[2018-08-24 16:39:17] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第9行步骤...
+[2018-08-24 16:39:17] [INFO] 开始查找元素[By.xpath: //input[@placeholder='车牌号']]
+[2018-08-24 16:39:17] [INFO] 找到了元素 [By.xpath: //input[@placeholder='车牌号']]
+[2018-08-24 16:39:18] [INFO] 输入：[粤Z26883] 到 [By.xpath: //input[@placeholder='车牌号']]
+[2018-08-24 16:39:18] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第10行步骤...
+[2018-08-24 16:39:18] [INFO] 开始查找元素[By.xpath: //div[@class='form-group search-group']]
+[2018-08-24 16:39:18] [INFO] 找到了元素 [By.xpath: //div[@class='form-group search-group']]
+[2018-08-24 16:39:18] [INFO] 点击元素 [By.xpath: //div[@class='form-group search-group']]
+[2018-08-24 16:39:19] [INFO] 页面加载完成
+[2018-08-24 16:39:19] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第11行步骤...
+[2018-08-24 16:39:20] [INFO] 找到了期望的文字: [粤Z26883]
+[2018-08-24 16:39:20] [INFO] 正在解析excel:[parking/PassAndOut.xlsx]中的sheet(用例)：[003_checkLeaveCar]的第12行步骤...
+[2018-08-24 16:39:20] [INFO] checkLeaveCar 测试用例执行成功！
+[2018-08-24 16:39:22] [INFO] 浏览器退出
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = filterVisitorCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = checkChargeBill
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = editBlacklistCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = addSpecialTypeCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = delSpecialTypeCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = addBlacklistCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = editVisitorCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = checkInsideCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = delBlacklistCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = addVisitorCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = editSpecialTypeCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = delVisitorCar
+[2018-08-24 16:39:22] [INFO] 执行成功的用例 = checkLeaveCar

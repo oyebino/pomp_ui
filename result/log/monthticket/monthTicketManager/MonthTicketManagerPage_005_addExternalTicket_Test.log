@@ -1,0 +1,114 @@
+[2018-08-24 11:57:15] [INFO] 当前操作系统是:[Windows 7]
+[2018-08-24 11:57:15] [INFO] 启动测试浏览器：[chrome]
+[2018-08-24 11:57:18] [INFO] 最大化浏览器:chrome
+[2018-08-24 11:57:22] [INFO] 打开测试页面:[http://47.106.221.58:5002/#/login]
+[2018-08-24 11:57:22] [INFO] 开始查找元素[By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:57:22] [INFO] 找到了元素 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:57:23] [INFO] 输入：[autotest1] 到 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:57:23] [INFO] 开始查找元素[By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:57:23] [INFO] 找到了元素 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:57:24] [INFO] 输入：[123456] 到 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:57:24] [INFO] 开始查找元素[By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:57:24] [INFO] 找到了元素 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:57:25] [INFO] 输入：[9999] 到 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:57:25] [INFO] 开始查找元素[By.xpath: //span[text()='登录']]
+[2018-08-24 11:57:25] [INFO] 找到了元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:57:25] [INFO] 点击元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:57:29] [INFO] 页面加载完成
+[2018-08-24 11:57:29] [INFO] addExternalTicket 测试用例开始执行！
+[2018-08-24 11:57:29] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第1行步骤...
+[2018-08-24 11:57:29] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:31] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:31] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第2行步骤...
+[2018-08-24 11:57:31] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:31] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:31] [INFO] 点击元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:32] [INFO] 页面加载完成
+[2018-08-24 11:57:32] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第3行步骤...
+[2018-08-24 11:57:32] [INFO] 开始查找元素[By.xpath: //li/a[@id='6100']]
+[2018-08-24 11:57:32] [INFO] 找到了元素 [By.xpath: //li/a[@id='6100']]
+[2018-08-24 11:57:32] [INFO] 点击元素 [By.xpath: //li/a[@id='6100']]
+[2018-08-24 11:57:37] [INFO] 页面加载完成
+[2018-08-24 11:57:37] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第4行步骤...
+[2018-08-24 11:57:37] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第5行步骤...
+[2018-08-24 11:57:37] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//a[contains(text(), "创建对外月票")]]
+[2018-08-24 11:57:37] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//a[contains(text(), "创建对外月票")]]
+[2018-08-24 11:57:37] [INFO] 点击元素 [By.xpath: //*[@id="app"]//a[contains(text(), "创建对外月票")]]
+[2018-08-24 11:57:38] [INFO] 页面加载完成
+[2018-08-24 11:57:38] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第6行步骤...
+[2018-08-24 11:57:39] [INFO] 页面加载完成
+[2018-08-24 11:57:39] [INFO] 页面元素By.xpath: //*[@id="app"]//label[contains(text(),'车场类型')]/following-sibling::*[1]is select
+[2018-08-24 11:57:39] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第7行步骤...
+[2018-08-24 11:57:39] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'月票名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:39] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'月票名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:40] [INFO] 输入：[UI对外月票] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'月票名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:40] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第8行步骤...
+[2018-08-24 11:57:40] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'简介')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:57:40] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'简介')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:57:42] [INFO] 输入：[艾科智泊对外] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'简介')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:57:42] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第9行步骤...
+[2018-08-24 11:57:42] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'支持停车场')]/following-sibling::*[1]//button]
+[2018-08-24 11:57:42] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'支持停车场')]/following-sibling::*[1]//button]
+[2018-08-24 11:57:42] [INFO] 点击元素 [By.xpath: //*[@id="app"]//label[contains(text(),'支持停车场')]/following-sibling::*[1]//button]
+[2018-08-24 11:57:48] [INFO] 页面加载完成
+[2018-08-24 11:57:48] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第10行步骤...
+[2018-08-24 11:57:49] [INFO] 页面加载完成
+[2018-08-24 11:57:49] [INFO] The element: [ xpath: //ul[@id='ParkTree']//span[text()='180主入口a']/../preceding-sibling::*[1]] is selected
+[2018-08-24 11:57:49] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第11行步骤...
+[2018-08-24 11:57:50] [INFO] 页面加载完成
+[2018-08-24 11:57:50] [INFO] The element: [ xpath: //ul[@id='ParkTree']//span[text()='181主出口b']/../preceding-sibling::*[1]] is selected
+[2018-08-24 11:57:50] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第12行步骤...
+[2018-08-24 11:57:50] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//div[@class='modal-wrapper select-park-modal']//button[contains(text(),'确认')][1]]
+[2018-08-24 11:57:50] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//div[@class='modal-wrapper select-park-modal']//button[contains(text(),'确认')][1]]
+[2018-08-24 11:57:50] [INFO] 点击元素 [By.xpath: //*[@id="app"]//div[@class='modal-wrapper select-park-modal']//button[contains(text(),'确认')][1]]
+[2018-08-24 11:57:50] [INFO] 页面加载完成
+[2018-08-24 11:57:50] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第13行步骤...
+[2018-08-24 11:57:50] [INFO] 开始查找元素[By.xpath: //label[contains(text(),'支持停车场')]/following-sibling::*[1]//input[@class='financialParkId']]
+[2018-08-24 11:57:50] [INFO] 找到了元素 [By.xpath: //label[contains(text(),'支持停车场')]/following-sibling::*[1]//input[@class='financialParkId']]
+[2018-08-24 11:57:50] [INFO] 点击元素 [By.xpath: //label[contains(text(),'支持停车场')]/following-sibling::*[1]//input[@class='financialParkId']]
+[2018-08-24 11:57:51] [INFO] 页面加载完成
+[2018-08-24 11:57:51] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第14行步骤...
+[2018-08-24 11:57:51] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'支持授权车牌数')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:51] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'支持授权车牌数')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:52] [INFO] 输入：[2] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'支持授权车牌数')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:52] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第15行步骤...
+[2018-08-24 11:57:52] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'可销售时间')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:52] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'可销售时间')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:53] [INFO] 点击元素 [By.xpath: //*[@id="app"]//label[contains(text(),'可销售时间')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:53] [INFO] 页面加载完成
+[2018-08-24 11:57:53] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第16行步骤...
+[2018-08-24 11:57:53] [INFO] 开始查找元素[By.xpath: //div[@class='el-picker-panel__sidebar']/button[contains(text(),'后一天')]]
+[2018-08-24 11:57:53] [INFO] 找到了元素 [By.xpath: //div[@class='el-picker-panel__sidebar']/button[contains(text(),'后一天')]]
+[2018-08-24 11:57:53] [INFO] 点击元素 [By.xpath: //div[@class='el-picker-panel__sidebar']/button[contains(text(),'后一天')]]
+[2018-08-24 11:57:54] [INFO] 页面加载完成
+[2018-08-24 11:57:54] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第17行步骤...
+[2018-08-24 11:57:54] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'允许车主向前续费')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:54] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'允许车主向前续费')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:55] [INFO] 输入：[5] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'允许车主向前续费')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:55] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第18行步骤...
+[2018-08-24 11:57:56] [INFO] 你选择了：不限
+[2018-08-24 11:57:56] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第19行步骤...
+[2018-08-24 11:57:57] [INFO] 页面加载完成
+[2018-08-24 11:57:57] [INFO] 页面元素By.xpath: //*[@id="app"]//label[contains(text(),'续费方式')]/following-sibling::*[1]is select
+[2018-08-24 11:57:57] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第20行步骤...
+[2018-08-24 11:57:57] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'单价')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:57] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'单价')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:58] [INFO] 输入：[10] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'单价')]/following-sibling::*[1]//input]
+[2018-08-24 11:57:58] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第21行步骤...
+[2018-08-24 11:58:00] [INFO] 你选择了：无限
+[2018-08-24 11:58:00] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第22行步骤...
+[2018-08-24 11:58:00] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'备注')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:58:00] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'备注')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:58:06] [INFO] 输入：[UI自动化测试] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'备注')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:58:06] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第23行步骤...
+[2018-08-24 11:58:07] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第24行步骤...
+[2018-08-24 11:58:07] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:58:07] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:58:07] [INFO] 点击元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:58:10] [INFO] 页面加载完成
+[2018-08-24 11:58:10] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第25行步骤...
+[2018-08-24 11:58:10] [INFO] 页面元素:[By.xpath: //div[@class='toast-wrapper']]已变化
+[2018-08-24 11:58:10] [INFO] 找到了期望的文字: [月票创建成功]
+[2018-08-24 11:58:10] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[005_addExternalTicket]的第26行步骤...
+[2018-08-24 11:58:11] [INFO] addExternalTicket 测试用例执行成功！
+[2018-08-24 11:58:13] [INFO] 浏览器退出

@@ -1,0 +1,65 @@
+[2018-08-24 11:37:42] [INFO] 当前操作系统是:[Windows 7]
+[2018-08-24 11:37:42] [INFO] 启动测试浏览器：[chrome]
+[2018-08-24 11:37:46] [INFO] 最大化浏览器:chrome
+[2018-08-24 11:37:49] [INFO] 打开测试页面:[http://47.106.221.58:5002/#/login]
+[2018-08-24 11:37:49] [INFO] 开始查找元素[By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:37:49] [INFO] 找到了元素 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:37:50] [INFO] 输入：[autotest1] 到 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:37:50] [INFO] 开始查找元素[By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:37:50] [INFO] 找到了元素 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:37:51] [INFO] 输入：[123456] 到 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:37:51] [INFO] 开始查找元素[By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:37:51] [INFO] 找到了元素 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:37:53] [INFO] 输入：[9999] 到 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:37:53] [INFO] 开始查找元素[By.xpath: //span[text()='登录']]
+[2018-08-24 11:37:53] [INFO] 找到了元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:37:53] [INFO] 点击元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:37:56] [INFO] 页面加载完成
+[2018-08-24 11:37:56] [INFO] addRoleSuccess 测试用例开始执行！
+[2018-08-24 11:37:56] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第1行步骤...
+[2018-08-24 11:37:56] [INFO] 开始查找元素[By.xpath: //i[@class='ion-grid']]
+[2018-08-24 11:37:58] [INFO] 找到了元素 [By.xpath: //i[@class='ion-grid']]
+[2018-08-24 11:37:58] [INFO] 点击元素 [By.xpath: //i[@class='ion-grid']]
+[2018-08-24 11:37:59] [INFO] 页面加载完成
+[2018-08-24 11:37:59] [INFO] 开始查找元素[By.xpath: //div[@class='mask-box']]
+[2018-08-24 11:37:59] [INFO] 找到了元素 [By.xpath: //div[@class='mask-box']]
+[2018-08-24 11:37:59] [INFO] 点击元素 [By.xpath: //div[@class='mask-box']]
+[2018-08-24 11:38:00] [INFO] 页面加载完成
+[2018-08-24 11:38:00] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第2行步骤...
+[2018-08-24 11:38:00] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "系统管理")]]
+[2018-08-24 11:38:00] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "系统管理")]]
+[2018-08-24 11:38:00] [INFO] 点击元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "系统管理")]]
+[2018-08-24 11:38:00] [INFO] 页面加载完成
+[2018-08-24 11:38:00] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第3行步骤...
+[2018-08-24 11:38:00] [INFO] 开始查找元素[By.xpath: //li/a[@id='2200']]
+[2018-08-24 11:38:01] [INFO] 找到了元素 [By.xpath: //li/a[@id='2200']]
+[2018-08-24 11:38:01] [INFO] 点击元素 [By.xpath: //li/a[@id='2200']]
+[2018-08-24 11:38:02] [INFO] 页面加载完成
+[2018-08-24 11:38:02] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第4行步骤...
+[2018-08-24 11:38:02] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第5行步骤...
+[2018-08-24 11:38:02] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//a[contains(text(), "新增角色")]]
+[2018-08-24 11:38:02] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//a[contains(text(), "新增角色")]]
+[2018-08-24 11:38:02] [INFO] 点击元素 [By.xpath: //*[@id="app"]//a[contains(text(), "新增角色")]]
+[2018-08-24 11:38:03] [INFO] 页面加载完成
+[2018-08-24 11:38:03] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第6行步骤...
+[2018-08-24 11:38:03] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'角色名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:38:03] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'角色名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:38:04] [INFO] 输入：[UI自动化测试角色] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'角色名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:38:04] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第7行步骤...
+[2018-08-24 11:38:04] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'描述')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:38:04] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'描述')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:38:05] [INFO] 输入：[艾科智泊测试角色描述] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'描述')]/following-sibling::*[1]//textarea]
+[2018-08-24 11:38:05] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第8行步骤...
+[2018-08-24 11:38:06] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第9行步骤...
+[2018-08-24 11:38:06] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:38:06] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:38:06] [INFO] 点击元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:38:07] [INFO] 页面加载完成
+[2018-08-24 11:38:07] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第10行步骤...
+[2018-08-24 11:38:07] [INFO] 页面元素:[By.xpath: //div[@class='toast-wrapper']]已变化
+[2018-08-24 11:38:07] [INFO] 找到了期望的文字: [操作成功]
+[2018-08-24 11:38:07] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第11行步骤...
+[2018-08-24 11:38:08] [INFO] 正在解析excel:[system/Role.xlsx]中的sheet(用例)：[001_addRoleSuccess]的第12行步骤...
+[2018-08-24 11:38:08] [INFO] 找到了期望的文字: [UI自动化测试角色]
+[2018-08-24 11:38:08] [INFO] addRoleSuccess 测试用例执行成功！
+[2018-08-24 11:38:10] [INFO] 浏览器退出

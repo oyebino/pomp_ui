@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- thread-count 定义同时启动的浏览器数 、parallel="tests" 表明每个test都是平级的 -->
+<suite name="autotest_wymall" parallel="tests" thread-count="1">
+	<!-- chrome,firefox,ghost和ie不区分大小写 -->
+	<parameter name="browserName" value="chrome" />
+	<!-- user的属性文件地址,此配置文件存储了用户名和密码等信息 -->
+	<parameter name="userInfoPath" value="config/user.properties" />
+	<!-- driver的属性配置文件保存路径 -->
+	<parameter name="driverConfgFilePath" value="config/driver.properties" />
+	<!-- 定义测试的站点 -->
+	<parameter name="testurl" value="http://47.106.221.58:5002/#/login" />
+	<!-- 进程等待1秒中的控制时间 -->
+	<parameter name="sleepTime" value="800" />
+	<!-- 页面元素10秒不出现超时时间 -->
+	<parameter name="timeOut" value="30" />
+	<!-- 这个是等待alert弹出的时间 单位毫秒 -->
+	<parameter name="waitMillisecondsForAlert" value="40000" />
+
+	<!-- 定义测试模块，用test标签包围 -->
+	
+
+
+	<test name="Role" preserve-order="true">
+		<classes>
+			<class name="com.wymall.test.testcases.system.role.RolePage_001_addRoleSuccess_Test" />
+			<class name="com.wymall.test.testcases.system.role.RolePage_002_settingRole_Test" />
+			<class name="com.wymall.test.testcases.system.role.RolePage_003_editRole_Test" />
+			<class name="com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test" />
+		</classes>
+	</test>
+
+<!--
+	<test name="A_parking" preserve-order="true">
+		<packages>
+			<package name="com.wymall.test.testcases.parking.*" />
+		</packages>
+	</test>
+-->
+<!--
+	<test name="B_system" preserve-order="true">
+		<packages>
+			<package name="com.wymall.test.testcases.system.*" />
+		</packages>
+	</test>
+	<test name="C_perferential" preserve-order="true">
+		<packages>
+			<package name="com.wymall.test.testcases.preferential.*" />
+		</packages>
+	</test>
+	<test name="D_monthticket" preserve-order="true">
+		<packages>
+			<package name="com.wymall.test.testcases.monthticket.*" />
+		</packages>
+	</test>
+-->	
+	
+
+	<listeners>
+		<!-- arrow插件实现用例失败重跑以及生成测试报告 -->
+		<listener class-name="com.wymall.test.plugins.arrow.TestResultListener" />
+		<listener class-name="com.wymall.test.plugins.arrow.RetryListener" />
+		<listener class-name="com.wymall.test.plugins.arrow.PowerEmailableReporter" />
+		<!-- reporterNG优化生成测试报告 -->
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+</suite> 

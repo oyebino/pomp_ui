@@ -1,0 +1,100 @@
+[2018-08-24 11:45:45] [INFO] 当前操作系统是:[Windows 7]
+[2018-08-24 11:45:45] [INFO] 启动测试浏览器：[chrome]
+[2018-08-24 11:45:48] [INFO] 最大化浏览器:chrome
+[2018-08-24 11:45:51] [INFO] 打开测试页面:[http://47.106.221.58:5002/#/login]
+[2018-08-24 11:45:51] [INFO] 开始查找元素[By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:45:51] [INFO] 找到了元素 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:45:53] [INFO] 输入：[autotest1] 到 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:45:53] [INFO] 开始查找元素[By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:45:53] [INFO] 找到了元素 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:45:54] [INFO] 输入：[123456] 到 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:45:54] [INFO] 开始查找元素[By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:45:54] [INFO] 找到了元素 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:45:55] [INFO] 输入：[9999] 到 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:45:55] [INFO] 开始查找元素[By.xpath: //span[text()='登录']]
+[2018-08-24 11:45:55] [INFO] 找到了元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:45:55] [INFO] 点击元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:45:59] [INFO] 页面加载完成
+[2018-08-24 11:45:59] [INFO] addPayVoucher 测试用例开始执行！
+[2018-08-24 11:45:59] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第1行步骤...
+[2018-08-24 11:45:59] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "优惠管理")]]
+[2018-08-24 11:46:00] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "优惠管理")]]
+[2018-08-24 11:46:00] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第2行步骤...
+[2018-08-24 11:46:00] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "优惠管理")]]
+[2018-08-24 11:46:01] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "优惠管理")]]
+[2018-08-24 11:46:01] [INFO] 点击元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "优惠管理")]]
+[2018-08-24 11:46:01] [INFO] 页面加载完成
+[2018-08-24 11:46:01] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第3行步骤...
+[2018-08-24 11:46:01] [INFO] 开始查找元素[By.xpath: //li/a[@id='3200']]
+[2018-08-24 11:46:01] [INFO] 找到了元素 [By.xpath: //li/a[@id='3200']]
+[2018-08-24 11:46:01] [INFO] 点击元素 [By.xpath: //li/a[@id='3200']]
+[2018-08-24 11:46:02] [INFO] 页面加载完成
+[2018-08-24 11:46:02] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第4行步骤...
+[2018-08-24 11:46:03] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第5行步骤...
+[2018-08-24 11:46:03] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//a[contains(text(), "添加优惠")]]
+[2018-08-24 11:46:03] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//a[contains(text(), "添加优惠")]]
+[2018-08-24 11:46:03] [INFO] 点击元素 [By.xpath: //*[@id="app"]//a[contains(text(), "添加优惠")]]
+[2018-08-24 11:46:03] [INFO] 页面加载完成
+[2018-08-24 11:46:03] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第6行步骤...
+[2018-08-24 11:46:03] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'优惠名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:46:04] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'优惠名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:46:05] [INFO] 输入：[UI支付优惠] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'优惠名称')]/following-sibling::*[1]//input]
+[2018-08-24 11:46:05] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第7行步骤...
+[2018-08-24 11:46:05] [INFO] 开始查找元素[By.xpath: //*[@id='app']//label[contains(text(),'停车场列表')]/../following-sibling::*[1]]
+[2018-08-24 11:46:05] [INFO] 找到了元素 [By.xpath: //*[@id='app']//label[contains(text(),'停车场列表')]/../following-sibling::*[1]]
+[2018-08-24 11:46:05] [INFO] 点击元素 [By.xpath: //*[@id='app']//label[contains(text(),'停车场列表')]/../following-sibling::*[1]]
+[2018-08-24 11:46:06] [INFO] 页面加载完成
+[2018-08-24 11:46:06] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第8行步骤...
+[2018-08-24 11:46:07] [INFO] 页面加载完成
+[2018-08-24 11:46:07] [INFO] The element: [ xpath: //ul[@id='ParkTree']//span[text()='自动化测试停车场']/../preceding-sibling::*[1]] is selected
+[2018-08-24 11:46:07] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第9行步骤...
+[2018-08-24 11:46:07] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//div[@class='modal-wrapper select-park-modal']//button[contains(text(),'确认')][1]]
+[2018-08-24 11:46:07] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//div[@class='modal-wrapper select-park-modal']//button[contains(text(),'确认')][1]]
+[2018-08-24 11:46:08] [INFO] 点击元素 [By.xpath: //*[@id="app"]//div[@class='modal-wrapper select-park-modal']//button[contains(text(),'确认')][1]]
+[2018-08-24 11:46:08] [INFO] 页面加载完成
+[2018-08-24 11:46:08] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第10行步骤...
+[2018-08-24 11:46:09] [INFO] 页面加载完成
+[2018-08-24 11:46:09] [INFO] The element: [ xpath: //*[@id="app"]//label[contains(text(),'适用支付渠道')]/..//span[contains(text(),'一点停APP')]/preceding-sibling::*[1]] is selected
+[2018-08-24 11:46:09] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第11行步骤...
+[2018-08-24 11:46:09] [INFO] 页面加载完成
+[2018-08-24 11:46:09] [INFO] The element: [ xpath: //*[@id="app"]//label[contains(text(),'适用对象')]/..//span[contains(text(),'一点停手机用户')]/preceding-sibling::*[1]] is selected
+[2018-08-24 11:46:09] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第12行步骤...
+[2018-08-24 11:46:09] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'有效日期')]/following-sibling::*[1]//input]
+[2018-08-24 11:46:09] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'有效日期')]/following-sibling::*[1]//input]
+[2018-08-24 11:46:10] [INFO] 点击元素 [By.xpath: //*[@id="app"]//label[contains(text(),'有效日期')]/following-sibling::*[1]//input]
+[2018-08-24 11:46:10] [INFO] 页面加载完成
+[2018-08-24 11:46:10] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第13行步骤...
+[2018-08-24 11:46:10] [INFO] 开始查找元素[By.xpath: //div[@class='el-picker-panel__sidebar']/button[contains(text(),'后一天')]]
+[2018-08-24 11:46:10] [INFO] 找到了元素 [By.xpath: //div[@class='el-picker-panel__sidebar']/button[contains(text(),'后一天')]]
+[2018-08-24 11:46:10] [INFO] 点击元素 [By.xpath: //div[@class='el-picker-panel__sidebar']/button[contains(text(),'后一天')]]
+[2018-08-24 11:46:11] [INFO] 页面加载完成
+[2018-08-24 11:46:11] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第14行步骤...
+[2018-08-24 11:46:12] [INFO] 页面加载完成
+[2018-08-24 11:46:12] [INFO] The element: [ xpath: //*[@id="app"]//label[contains(text(),'有效日期')]/../following-sibling::div[1]//span[contains(text(),'星期一')]/preceding-sibling::*[1]] is selected
+[2018-08-24 11:46:12] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第15行步骤...
+[2018-08-24 11:46:12] [INFO] 页面加载完成
+[2018-08-24 11:46:12] [INFO] The element: [ xpath: //*[@id="app"]//label[contains(text(),'有效日期')]/../following-sibling::div[1]//span[contains(text(),'星期四')]/preceding-sibling::*[1]] is selected
+[2018-08-24 11:46:12] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第16行步骤...
+[2018-08-24 11:46:12] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'停车费条件')]/following-sibling::div[1]/div[1]//input]
+[2018-08-24 11:46:12] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'停车费条件')]/following-sibling::div[1]/div[1]//input]
+[2018-08-24 11:46:13] [INFO] 输入：[10] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'停车费条件')]/following-sibling::div[1]/div[1]//input]
+[2018-08-24 11:46:13] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第17行步骤...
+[2018-08-24 11:46:13] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'停车费条件')]/following-sibling::div[1]/div[3]//input]
+[2018-08-24 11:46:14] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'停车费条件')]/following-sibling::div[1]/div[3]//input]
+[2018-08-24 11:46:15] [INFO] 输入：[20] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'停车费条件')]/following-sibling::div[1]/div[3]//input]
+[2018-08-24 11:46:15] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第18行步骤...
+[2018-08-24 11:46:15] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//label[contains(text(),'最高优惠金额')]/following-sibling::*[1]//input]
+[2018-08-24 11:46:15] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//label[contains(text(),'最高优惠金额')]/following-sibling::*[1]//input]
+[2018-08-24 11:46:16] [INFO] 输入：[100] 到 [By.xpath: //*[@id="app"]//label[contains(text(),'最高优惠金额')]/following-sibling::*[1]//input]
+[2018-08-24 11:46:16] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第19行步骤...
+[2018-08-24 11:46:16] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第20行步骤...
+[2018-08-24 11:46:16] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//button[contains(text(),'确定')]]
+[2018-08-24 11:46:16] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确定')]]
+[2018-08-24 11:46:16] [INFO] 点击元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确定')]]
+[2018-08-24 11:46:18] [INFO] 页面加载完成
+[2018-08-24 11:46:18] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第21行步骤...
+[2018-08-24 11:46:18] [INFO] 页面元素:[By.xpath: //div[@class='toast-wrapper']]已变化
+[2018-08-24 11:46:18] [INFO] 找到了期望的文字: [保存成功]
+[2018-08-24 11:46:18] [INFO] 正在解析excel:[preferential/PayVoucher.xlsx]中的sheet(用例)：[001_addPayVoucher]的第22行步骤...
+[2018-08-24 11:46:18] [INFO] addPayVoucher 测试用例执行成功！
+[2018-08-24 11:46:20] [INFO] 浏览器退出

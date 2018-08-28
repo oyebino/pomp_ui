@@ -1,0 +1,61 @@
+[2018-08-24 11:56:45] [INFO] 当前操作系统是:[Windows 7]
+[2018-08-24 11:56:45] [INFO] 启动测试浏览器：[chrome]
+[2018-08-24 11:56:49] [INFO] 最大化浏览器:chrome
+[2018-08-24 11:56:53] [INFO] 打开测试页面:[http://47.106.221.58:5002/#/login]
+[2018-08-24 11:56:53] [INFO] 开始查找元素[By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:56:53] [INFO] 找到了元素 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:56:54] [INFO] 输入：[autotest1] 到 [By.xpath: //label[@for='username']//following-sibling::*[1]//input]
+[2018-08-24 11:56:54] [INFO] 开始查找元素[By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:56:54] [INFO] 找到了元素 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:56:55] [INFO] 输入：[123456] 到 [By.xpath: //label[@for='password']//following-sibling::*[1]//input]
+[2018-08-24 11:56:55] [INFO] 开始查找元素[By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:56:55] [INFO] 找到了元素 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:56:57] [INFO] 输入：[9999] 到 [By.xpath: //label[text()='验证码']/following-sibling::*[1]//input]
+[2018-08-24 11:56:57] [INFO] 开始查找元素[By.xpath: //span[text()='登录']]
+[2018-08-24 11:56:57] [INFO] 找到了元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:56:57] [INFO] 点击元素 [By.xpath: //span[text()='登录']]
+[2018-08-24 11:57:00] [INFO] 页面加载完成
+[2018-08-24 11:57:00] [INFO] delInternalTicket 测试用例开始执行！
+[2018-08-24 11:57:00] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第1行步骤...
+[2018-08-24 11:57:00] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:02] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:02] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第2行步骤...
+[2018-08-24 11:57:02] [INFO] 开始查找元素[By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:02] [INFO] 找到了元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:02] [INFO] 点击元素 [By.xpath: //div[@id='menu_box']//a[contains(text(), "月票管理")]]
+[2018-08-24 11:57:03] [INFO] 页面加载完成
+[2018-08-24 11:57:03] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第3行步骤...
+[2018-08-24 11:57:03] [INFO] 开始查找元素[By.xpath: //li/a[@id='6100']]
+[2018-08-24 11:57:03] [INFO] 找到了元素 [By.xpath: //li/a[@id='6100']]
+[2018-08-24 11:57:03] [INFO] 点击元素 [By.xpath: //li/a[@id='6100']]
+[2018-08-24 11:57:07] [INFO] 页面加载完成
+[2018-08-24 11:57:07] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第4行步骤...
+[2018-08-24 11:57:08] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第5行步骤...
+[2018-08-24 11:57:09] [INFO] 你选择了：月票名称
+[2018-08-24 11:57:09] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第6行步骤...
+[2018-08-24 11:57:09] [INFO] 开始查找元素[By.xpath: //input[@placeholder='月票名称']]
+[2018-08-24 11:57:09] [INFO] 找到了元素 [By.xpath: //input[@placeholder='月票名称']]
+[2018-08-24 11:57:10] [INFO] 输入：[UI对内月票修改] 到 [By.xpath: //input[@placeholder='月票名称']]
+[2018-08-24 11:57:10] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第7行步骤...
+[2018-08-24 11:57:10] [INFO] 开始查找元素[By.xpath: //div[@class='form-group search-group']]
+[2018-08-24 11:57:10] [INFO] 找到了元素 [By.xpath: //div[@class='form-group search-group']]
+[2018-08-24 11:57:10] [INFO] 点击元素 [By.xpath: //div[@class='form-group search-group']]
+[2018-08-24 11:57:12] [INFO] 页面加载完成
+[2018-08-24 11:57:12] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第8行步骤...
+[2018-08-24 11:57:12] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第9行步骤...
+[2018-08-24 11:57:12] [INFO] 开始查找元素[By.xpath: //*[@id="monthTicketManageTable"]//div[@class='el-table__fixed-right']//i[@class='el-icon-delete']]
+[2018-08-24 11:57:12] [INFO] 找到了元素 [By.xpath: //*[@id="monthTicketManageTable"]//div[@class='el-table__fixed-right']//i[@class='el-icon-delete']]
+[2018-08-24 11:57:12] [INFO] 点击元素 [By.xpath: //*[@id="monthTicketManageTable"]//div[@class='el-table__fixed-right']//i[@class='el-icon-delete']]
+[2018-08-24 11:57:13] [INFO] 页面加载完成
+[2018-08-24 11:57:13] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第10行步骤...
+[2018-08-24 11:57:13] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第11行步骤...
+[2018-08-24 11:57:13] [INFO] 开始查找元素[By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:57:13] [INFO] 找到了元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:57:13] [INFO] 点击元素 [By.xpath: //*[@id="app"]//button[contains(text(),'确认')]]
+[2018-08-24 11:57:14] [INFO] 页面加载完成
+[2018-08-24 11:57:14] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第12行步骤...
+[2018-08-24 11:57:14] [INFO] 页面元素:[By.xpath: //div[@class='toast-wrapper']]已变化
+[2018-08-24 11:57:14] [INFO] 找到了期望的文字: [删除月票成功]
+[2018-08-24 11:57:14] [INFO] 正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[004_delInternalTicket]的第13行步骤...
+[2018-08-24 11:57:15] [INFO] delInternalTicket 测试用例执行成功！
+[2018-08-24 11:57:15] [INFO] 浏览器退出
