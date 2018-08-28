@@ -265,7 +265,7 @@ public class SeleniumUtil {
 	 * 在给定的时间内去查找元素，如果没找到则超时，抛出异常
 	 * */
 	public void waitForElementToLoad(int timeOut, final By By) {
-		logger.info("开始查找元素[" + By + "]");
+	//	logger.info("开始查找元素[" + By + "]");
 		try {
 			(new WebDriverWait(driver, timeOut)).until(new ExpectedCondition<Boolean>() {
 
@@ -479,17 +479,18 @@ public class SeleniumUtil {
 	 * 选择下拉选项 -根据文本内容
 	 * */
 	public void selectByText(By by, String text) {
-		driver.findElement(by).click();
+		click(by);
 		waitMilliSecond(500);
 		List<WebElement> objs =driver.findElements(by.xpath("//ul[@class='el-scrollbar__view el-select-dropdown__list']/li"));
 		for(WebElement obj:objs){
 			if(obj.getText().trim().equals(text)){
-				waitMilliSecond(1000);
 				obj.click();
 				logger.info("你选择了："+text);
-				break;
+				return;
 			}
 		}
+		logger.error("没有【" + text + "】该选择");
+		Assert.fail("没有【" + text + "】该选择");
 	}
 
 	/**
@@ -829,27 +830,34 @@ public class SeleniumUtil {
 	 * flag:OFF,ON
 	 */
 
-	public void CheckboxSelectList(By byElement, String value, String flag){
-		String xpathvalue = byElement.toString().split("xpath:")[1].trim() + "//span[contains(text(),'"+ value +"')]/preceding-sibling::*[1]";
-		WebElement element = findElementBy(By.xpath(xpathvalue));
-		if (flag.toLowerCase().equals("on")) {
-			if (element.getAttribute("class").contains("is-checked")) {
-				logger.info("The element: [" + getLocatorByElement(element, ">") + "] is selected");
-			} else {
-				element.click();
-				loadPage();
-				logger.info("The element: [" + getLocatorByElement(element, ">") + "] is selected");
+	public void CheckboxSelectList(By byElement, String value, String flag) {
+		try {
+			String xpathvalue = byElement.toString().split("xpath:")[1].trim() + "//span[contains(text(),'" + value
+					+ "')]/preceding-sibling::*[1]";
+			WebElement element = findElementBy(By.xpath(xpathvalue));
+			if (flag.toLowerCase().equals("on")) {
+				if (element.getAttribute("class").contains("is-checked")) {
+					logger.info("The element: [" + getLocatorByElement(element, ">") + "] is selected");
+				} else {
+					element.click();
+					loadPage();
+					logger.info("The element: [" + getLocatorByElement(element, ">") + "] is selected");
+				}
+			} else if (flag.toLowerCase().equals("off")) {
+				if (element.getAttribute("class").contains("is-checked")) {
+					element.click();
+					loadPage();
+					logger.info("The element: [" + getLocatorByElement(element, ">") + "] is not selected");
+				} else {
+					logger.info("The element: [" + getLocatorByElement(element, ">") + "] is not selected");
+				}
 			}
-		} else if (flag.toLowerCase().equals("off")) {
-			if (element.getAttribute("class").contains("is-checked")) {
-				element.click();
-				loadPage();
-				logger.info("The element: [" + getLocatorByElement(element, ">") + "] is not selected");
-			} else{
-				logger.info("The element: [" + getLocatorByElement(element, ">") + "] is not selected");
-			}
+		} catch (NoSuchElementException e) {
+			logger.error("没有[" + value + "]选项..");
+			Assert.fail("没有勾选[" + value + "]选项..");
+		}catch(Exception e){
+			Assert.fail("没有勾选[" + value + "]选项..");
 		}
-		
 	}
 	
 	/**
@@ -993,7 +1001,7 @@ public class SeleniumUtil {
 				waitMilliSecond(250);
 			}
 			else {
-				logger.info("页面加载完成");
+		//		logger.info("页面加载完成");
 				break;
 			}
 		}
@@ -1124,6 +1132,7 @@ public class SeleniumUtil {
 		try{
 			File source_file= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(source_file,new File(dir_name + File.separator + name + ".png"));
+			logger.info("截图成功...");
 		}catch (IOException e){
 			e.printStackTrace();
 		}
@@ -1294,15 +1303,21 @@ public class SeleniumUtil {
 	 * @param value
 	 */
 	public void singleChoose(By by, String value) {
-		String xpathspan = by.toString().split("xpath:")[1].trim() + "//span[contains(text(),'" + value
-				+ "')]/preceding-sibling::span[1]";
-		WebElement b = driver.findElement(by.xpath(xpathspan));
-		if (b.getAttribute("class").contains("true")) {
-			logger.info("页面元素" + by + "is select");
-		} else {
-			b.click();
-			loadPage();
-			logger.info("页面元素" + by + "is select");
+		try {
+			String xpathspan = by.toString().split("xpath:")[1].trim() + "//span[text()='" + value
+					+ "']/preceding-sibling::span[1]";
+			WebElement b = driver.findElement(by.xpath(xpathspan));
+			if (b.getAttribute("class").contains("true")) {
+				logger.info("页面元素" + by + "is select");
+			} else {
+				b.click();
+				loadPage();
+				logger.info("页面元素" + by + "is select");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			logger.error("没有[" + value + "]该选项");
+			Assert.fail("没有[" + value + "]该选项");
 		}
 	}
 	
@@ -1327,21 +1342,33 @@ public class SeleniumUtil {
 	 * by是获取table上级的div
 	 */
 	public void clickTableCheckbox(By by,String value){
+		try{
 		String xpathdiv = by.toString().split(":")[1].trim() + "//span[contains(text(),'" + value + "')]/../../..//span[@class='el-checkbox__inner']";
 		WebElement b = driver.findElement(By.xpath(xpathdiv));
 		waitMilliSecond(500);
 		b.click();
+		}catch(Exception e ){
+			e.printStackTrace();
+			logger.error("没有找到[" + value + "]该选项");
+			Assert.fail("没有找到[" + value + "]该选项");
+		}
 	}
 	
 	/**
 	 *pomp选择自然月，把可选都先上
 	 */
-	public void clickDateTable(By by){
-		String xpathdiv = by.toString().split(":")[1].trim() + "//td[@class='month']";
-		List<WebElement> b = driver.findElements(By.xpath(xpathdiv));
-		for(WebElement a:b){
-			waitMilliSecond(250);
-			a.click();
+	public void clickDateTable(By by) {
+		try {
+			String xpathdiv = by.toString().split(":")[1].trim() + "//td[@class='month']";
+			List<WebElement> b = driver.findElements(By.xpath(xpathdiv));
+			for (WebElement a : b) {
+				waitMilliSecond(250);
+				a.click();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			logger.error("没有找到[" + by + "]该选项");
+			Assert.fail("没有找到[" + by + "]该选项");
 		}
 	}
 	
@@ -1350,6 +1377,7 @@ public class SeleniumUtil {
 	 * mockType, 0:进场；1：离场
 	 */
 	public void passAndOut(String carNum, String mockType,String FUNCTION_NAME,String CASE_NAME) {
+		try{
 		switchToWindow("模拟进出场");
 		type(By.xpath("//input[@name='carNo']"),carNum);
 		type(By.xpath("//input[@name='mockType']"),mockType);
@@ -1370,6 +1398,11 @@ public class SeleniumUtil {
 		driver.close();
 		//返回原来的窗口
 		backToOriginalWindow();
+		}catch(Exception e){
+			e.printStackTrace();
+			logger.error("模拟进出场失败");
+			Assert.fail("模拟进出场失败");
+		}
 	}
 	
 	/**
@@ -1414,6 +1447,7 @@ public class SeleniumUtil {
 	 * 缴费操作
 	 */
 	public void payCharge(String carNum,String parkCode,String FUNCTION_NAME,String CASE_NAME) {
+		try{
 		switchToWindow("模拟进出场");
 		//查费操作 
 		findElementBy(By.xpath("//input[@class='parkCode1']")).sendKeys(parkCode);
@@ -1446,6 +1480,11 @@ public class SeleniumUtil {
 		driver.close();
 		//返回原来的窗口
 		backToOriginalWindow();
+		}catch(Exception e){
+			e.printStackTrace();
+			logger.error("缴费失败...");
+			Assert.fail("缴费失败...");
+		}
 	}
 	
 	/**

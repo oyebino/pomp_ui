@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="B_system"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="33.877">
+  <properties />
+  
+  
+            <testcase name="buidingParking" time="33.877" classname="com.wymall.test.testcases.system.parking_group.Parking_groupPage_002_buidingParking_Test" />
+      
+</testsuite>

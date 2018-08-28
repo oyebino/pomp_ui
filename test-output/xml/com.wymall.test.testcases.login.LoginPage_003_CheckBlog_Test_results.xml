@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.259">
+  <properties />
+  
+  
+            <testcase name="checkBlog" time="10.259" classname="com.wymall.test.testcases.login.LoginPage_003_CheckBlog_Test" />
+      
+</testsuite>

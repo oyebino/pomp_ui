@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="C_perferential"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="23.850">
+  <properties />
+  
+  
+            <testcase name="setStratup" time="23.850" classname="com.wymall.test.testcases.preferential.business.BusinessPage_002_setStratup_Test" />
+      
+</testsuite>

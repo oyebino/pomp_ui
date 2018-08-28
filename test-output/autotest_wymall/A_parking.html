@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>TestNG:  A_parking</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>A_parking</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 24 16:32:08 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>434 seconds (434014 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_005_addBlacklistCar_Test.addBlacklistCar()'><b>addBlacklistCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_005_addBlacklistCar_Test</td>
+<td></td>
+<td>17</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_005_addBlacklistCar_Test@71bbf57e</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_008_addSpecialTypeCar_Test.addSpecialTypeCar()'><b>addSpecialTypeCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_008_addSpecialTypeCar_Test</td>
+<td></td>
+<td>23</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_008_addSpecialTypeCar_Test@7c29daf3</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_001_addVisitorCar_Test.addVisitorCar()'><b>addVisitorCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_001_addVisitorCar_Test</td>
+<td></td>
+<td>17</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_001_addVisitorCar_Test@3fd7a715</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.passAndOut.PassAndOutPage_002_checkChargeBill_Test.checkChargeBill()'><b>checkChargeBill</b><br>Test class: com.wymall.test.testcases.parking.passAndOut.PassAndOutPage_002_checkChargeBill_Test</td>
+<td></td>
+<td>37</td>
+<td>com.wymall.test.testcases.parking.passAndOut.PassAndOutPage_002_checkChargeBill_Test@7f13d6e</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.passAndOut.PassAndOutPage_001_checkInsideCar_Test.checkInsideCar()'><b>checkInsideCar</b><br>Test class: com.wymall.test.testcases.parking.passAndOut.PassAndOutPage_001_checkInsideCar_Test</td>
+<td></td>
+<td>22</td>
+<td>com.wymall.test.testcases.parking.passAndOut.PassAndOutPage_001_checkInsideCar_Test@64729b1e</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.passAndOut.PassAndOutPage_003_checkLeaveCar_Test.checkLeaveCar()'><b>checkLeaveCar</b><br>Test class: com.wymall.test.testcases.parking.passAndOut.PassAndOutPage_003_checkLeaveCar_Test</td>
+<td></td>
+<td>22</td>
+<td>com.wymall.test.testcases.parking.passAndOut.PassAndOutPage_003_checkLeaveCar_Test@51cdd8a</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_007_delBlacklistCar_Test.delBlacklistCar()'><b>delBlacklistCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_007_delBlacklistCar_Test</td>
+<td></td>
+<td>10</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_007_delBlacklistCar_Test@26aa12dd</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_010_delSpecialTypeCar_Test.delSpecialTypeCar()'><b>delSpecialTypeCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_010_delSpecialTypeCar_Test</td>
+<td></td>
+<td>11</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_010_delSpecialTypeCar_Test@1c3a4799</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_004_delVisitorCar_Test.delVisitorCar()'><b>delVisitorCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_004_delVisitorCar_Test</td>
+<td></td>
+<td>10</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_004_delVisitorCar_Test@711f39f9</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_006_editBlacklistCar_Test.editBlacklistCar()'><b>editBlacklistCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_006_editBlacklistCar_Test</td>
+<td></td>
+<td>12</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_006_editBlacklistCar_Test@23faf8f2</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_009_editSpecialTypeCar_Test.editSpecialTypeCar()'><b>editSpecialTypeCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_009_editSpecialTypeCar_Test</td>
+<td></td>
+<td>16</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_009_editSpecialTypeCar_Test@d44fc21</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_003_editVisitorCar_Test.editVisitorCar()'><b>editVisitorCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_003_editVisitorCar_Test</td>
+<td></td>
+<td>12</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_003_editVisitorCar_Test@2d6eabae</td></tr>
+<tr>
+<td title='com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_002_filterVisitorCar_Test.filterVisitorCar()'><b>filterVisitorCar</b><br>Test class: com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_002_filterVisitorCar_Test</td>
+<td></td>
+<td>7</td>
+<td>com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_002_filterVisitorCar_Test@4e7dc304</td></tr>
+</table><p>
+</body>
+</html>

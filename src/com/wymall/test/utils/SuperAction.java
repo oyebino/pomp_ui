@@ -234,7 +234,9 @@ public class SuperAction {
 		
 		for (int i = 1; i < rows; i++) {
 			try {
-				logger.info("正在解析excel:[" + founction + ".xlsx]中的sheet(用例)：[" + caseName + "]的第" + i + "行步骤...");
+			//正在解析excel:[monthticket/MonthTicketManager.xlsx]中的sheet(用例)：[001_addInternalTicket]的第1行步骤...	
+			//	logger.info("正在解析excel:[" + founction + ".xlsx]中的sheet(用例)：[" + caseName + "]的第" + i + "行步骤...");
+				logger.info("(用例)：[" + caseName + "]的第" + i + "行步骤...");
 				Row row = null;
 				Cell testDataCell = null;
 				Cell locatorCell = null;

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="D_monthticket"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="25.082">
+  <properties />
+  
+  
+            <testcase name="editInternalTicket" time="25.082" classname="com.wymall.test.testcases.monthticket.monthTicketManager.MonthTicketManagerPage_003_editInternalTicket_Test" />
+      
+</testsuite>

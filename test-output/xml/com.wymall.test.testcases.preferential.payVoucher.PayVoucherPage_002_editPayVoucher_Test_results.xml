@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="C_perferential"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.038">
+  <properties />
+  
+  
+            <testcase name="editPayVoucher" time="11.038" classname="com.wymall.test.testcases.preferential.payVoucher.PayVoucherPage_002_editPayVoucher_Test" />
+      
+</testsuite>

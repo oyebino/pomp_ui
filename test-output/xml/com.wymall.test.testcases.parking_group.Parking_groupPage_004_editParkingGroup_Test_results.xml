@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Role"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="6.243">
+  <properties />
+  
+  
+            <testcase name="editParkingGroup" time="6.243" classname="com.wymall.test.testcases.parking_group.Parking_groupPage_004_editParkingGroup_Test" />
+      
+</testsuite>
