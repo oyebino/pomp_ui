@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -20,6 +21,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
+import com.google.common.base.Joiner;
 import com.wymall.test.utils.SeleniumUtil;
 import com.wymall.test.utils.actions.ParamConstant;
 
@@ -162,11 +164,40 @@ public class TestResultListener extends TestListenerAdapter {
 			Reporter.setCurrentTestResult(tr);
 	//		Reporter.log(filePath);
 			// 把截图写入到Html报告中方便查看
-			filePath = filePath.replaceAll("\\\\", "/");
-		//	Reporter.log("<img src=\"../../" + filePath + "\"/>");
-			Reporter.log("<img src=\"../../" + filePath + "\"/>");
-
+			String failScreenShotFile = filePath.replaceAll("\\\\", "/");
+			String screenShotListfiles = getListFloderPath(filePath).replaceAll("\\\\", "/");
+			Reporter.log("<img onclick=\"viewmore(event)\" data-preview=\"" + screenShotListfiles + "\" src=\"../../" + failScreenShotFile + "\"/>");
 		}
 	}
-
+	
+	//获取截图文件
+	public static String getListFloderPath(String path) {
+		List list = new ArrayList<String> ();
+		File file = new File(getFloderPath(path));
+		if (file.exists()) {
+			File[] files = file.listFiles();
+			for (File file2 : files) {
+				if (file2.isFile()) {
+					list.add("../../" + file2.toString());
+				} 
+			}
+		}else{
+			return "文件不存在...";
+		}
+		if(!list.isEmpty()){
+			return Joiner.on(";").join(list);
+		}else{
+			return "没有截图文件...";
+		}
+	}
+	
+	//获取文件上层路径
+	public static String getFloderPath(String filePath){
+		String newPath = filePath.replaceAll("\\\\", "/");
+		int index = newPath.lastIndexOf('/');
+		if(index != -1){
+			return newPath.substring(0 , index + 1);
+		}
+		return newPath;
+	}
 }

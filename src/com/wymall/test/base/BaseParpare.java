@@ -31,8 +31,8 @@ public class BaseParpare {
 	protected int waitMillisecondsForAlert = 0;
 
 
-	//	@BeforeClass
-	@BeforeSuite
+	@BeforeClass
+	//	@BeforeSuite
 	/**启动浏览器并打开测试页面*/
 	public void startTest(ITestContext context) {
 		LogConfiguration.initLog(this.getClass().getName());
@@ -64,8 +64,8 @@ public class BaseParpare {
 		
 	}
 
-	//	@AfterClass
-	@AfterSuite
+	@AfterClass
+	//	@AfterSuite
 	/**结束测试关闭浏览器*/
 	public void endTest() {
 		if (seleniumUtil.driver != null) {

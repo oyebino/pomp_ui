@@ -10,6 +10,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -23,81 +24,44 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.google.common.base.Joiner;
+
 import edu.emory.mathcs.backport.java.util.Arrays;
  
 
 public class Aketest {
-private static WebDriver driver;
-	
-	@BeforeClass
-	public static void before(){
-		driver=new FirefoxDriver();
-		driver.get("https://www.baidu.com");
-		driver.manage().window().maximize();
-		System.out.println("there are " + driver.getWindowHandles().size() + " window");
+	public static String getListFloderPath(String path) {
+		List list = new ArrayList<String> ();
+		File file = new File(getFloderPath(path));
+		if (file.exists()) {
+			File[] files = file.listFiles();
+			for (File file2 : files) {
+				if (file2.isFile()) {
+					list.add("../../" + file2.toString());
+				} 
+			}
+		}else{
+			return "文件不存在...";
+		}
+		if(!list.isEmpty()){
+			return Joiner.on(";").join(list);
+		}else{
+			return "没有截图文件...";
+		}
 	}
 	
-	/*
-	@Test
-	public void getWindowMethod1(){
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.CONTROL + "n").perform();
-		switchToWindow("新标签页", driver);
-		driver.get("http://www.sina.com.cn");
-		System.out.println("there are " + driver.getWindowHandles().size() + " windows");
-	}*/
-	
-	@Test
-	public void getWindowMethod3(){
-		//	String href = driver.findElement(By.partialLinkText("新闻")).getAttribute("href");
-		JavascriptExecutor oJavaScriptExecutor = (JavascriptExecutor)driver;
-		oJavaScriptExecutor.executeScript("window.open('http://10.10.18.66:8080/jiekou.html');");
-		System.out.println("there are " + driver.getWindowHandles().size() + " windows");
+	public static String getFloderPath(String filePath){
+		String newPath = filePath.replaceAll("\\\\", "/");
+		int index = newPath.lastIndexOf('/');
+		if(index != -1){
+			return newPath.substring(0 , index + 1);
+		}
+		return newPath;
 	}
-	
-	@Test
-	public void getWindowMethod2(){
-		JavascriptExecutor oJavaScriptExecutor = (JavascriptExecutor)driver;
-		oJavaScriptExecutor.executeScript("window.open();");
-		System.out.println("there are " + driver.getWindowHandles().size() + " windows");
-	}
-	
-/*	
-	@AfterClass
-	public static void after(){
-		switchToWindow("模拟进出场",driver);
-		driver.close();
-		//driver.quit();
-	}*/
-	
-	
-	public static boolean switchToWindow(String windowTitle,WebDriver dr){  
-	    boolean flag = false;  
-	    try { 
-	    	//将页面上所有的windowshandle放在入set集合当中
-	        String currentHandle = dr.getWindowHandle();  
-	        Set<String> handles = dr.getWindowHandles();  
-	        for (String s : handles) {  
-	            if (s.equals(currentHandle))  
-	                continue;  
-	            else {  
-	            	dr.switchTo().window(s);
-	        //和当前的窗口进行比较如果相同就切换到windowhandle
-	        //判断title是否和handles当前的窗口相同
-	                if (dr.getTitle().contains(windowTitle)) {  
-	                    flag = true;  
-	                    System.out.println("Switch to window: "  
-	                            + windowTitle + " successfully!");  
-	                    break;  
-	                } else  
-	                    continue;  
-	            }  
-	        }  
-	    } catch (Exception e) {  
-	        System.out.printf("Window: " + windowTitle  
-	                + " cound not found!", e.fillInStackTrace());  
-	        flag = false;  
-	    }  
-	    return flag;  
+	public static void main(String[] args) {
+		
+		String path = "result\\screenshot\\system\\Miniprogram_user\\002_setPower\\运行错误_2018_08_28_16_14_14.jpg";
+		System.out.println(getListFloderPath(getFloderPath(path)));
+		
 	}
 }
