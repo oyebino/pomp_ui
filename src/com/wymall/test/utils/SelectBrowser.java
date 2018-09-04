@@ -35,7 +35,7 @@ public class SelectBrowser {
 		String driverConfgFilePath = context.getCurrentXmlTest().getParameter("driverConfgFilePath");
 		/** 声明好驱动的路径 */
 		String chromedriver_win = PropertiesDataProvider.getTestData(driverConfgFilePath, "chromedriver_win");
-		String chromedriver_linux = PropertiesDataProvider.getTestData(driverConfgFilePath, "chromedriver_linux");
+		String chromedriver_linux = PropertiesDataProvider.getTestData(driverConfgFilePath, "chromedriver_win");
 		String chromedriver_mac = PropertiesDataProvider.getTestData(driverConfgFilePath, "chromedriver_mac");
 		String ghostdriver_win = PropertiesDataProvider.getTestData(driverConfgFilePath, "ghostdriver_win");
 		String iedriver = PropertiesDataProvider.getTestData(driverConfgFilePath, "iedriver");
