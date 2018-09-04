@@ -123,10 +123,7 @@ public class SelectBrowser {
 		 * separator+"Google"+File.separator+"Chrome"+File.separator+"User Data"
 		 * );
 		 */
-		if(!flat){
-			System.setProperty("webdriver.chrome.driver", driverPath);
-			return new ChromeDriver();
-		}else{
+		if(flat){
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			try {
 				return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
@@ -136,6 +133,9 @@ public class SelectBrowser {
 				logger.error("浏览器driver获取异常...");
 				return null;
 			}
+		}else{
+			System.setProperty("webdriver.chrome.driver", driverPath);
+			return new ChromeDriver();
 		}
 		
 	}
@@ -152,17 +152,18 @@ public class SelectBrowser {
 	}
 	
 	public WebDriver getFirefoxDriver(String hubUrl,Boolean flat){
-		if(!flat){
+		if(flat){
+			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+			try {
+				return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				logger.error("浏览器driver获取异常...");
+				return null;
+			}
+		}else{
 			return new FirefoxDriver();
-		}
-		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-		try {
-			return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			logger.error("浏览器driver获取异常...");
-			return null;
 		}
 	}
 }
