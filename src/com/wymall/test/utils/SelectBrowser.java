@@ -25,6 +25,9 @@ public class SelectBrowser {
 	static Logger logger = Logger.getLogger(SelectBrowser.class.getName());
 
 	public WebDriver selectExplorerByName(String browser, ITestContext context) {
+		//管理端
+		String hubUrl = context.getCurrentXmlTest().getParameter("hubUrl");
+		
 		Properties props = System.getProperties(); // 获得系统属性集
 		String currentPlatform = props.getProperty("os.name"); // 操作系统名称
 		// 从testNG的配置文件读取参数driverConfgFilePath的值
@@ -46,12 +49,12 @@ public class SelectBrowser {
 
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				// 返回谷歌浏览器对象
-				return getChromeDriver(chromedriver_win);
+				return getChromeDriver(chromedriver_win,hubUrl);
 
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				// 返回火狐浏览器对象
 				//return new FirefoxDriver();
-				return getFirefoxDriver();
+				return getFirefoxDriver(hubUrl);
 
 			} else if (browser.equalsIgnoreCase("ghost")) {
 				// 返回ghost对象
@@ -66,7 +69,7 @@ public class SelectBrowser {
 		} else if (currentPlatform.toLowerCase().contains("linux")) { // 如果是linux平台
 
 			if (browser.equalsIgnoreCase("chrome")) {
-				return getChromeDriver(chromedriver_linux);
+				return getChromeDriver(chromedriver_linux,hubUrl);
 
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				return new FirefoxDriver();
@@ -77,7 +80,7 @@ public class SelectBrowser {
 
 		} else if (currentPlatform.toLowerCase().contains("mac")) { // 如果是mac平台
 			if (browser.equalsIgnoreCase("chrome")) {
-				return getChromeDriver(chromedriver_mac);
+				return getChromeDriver(chromedriver_mac,hubUrl);
 				
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				return new FirefoxDriver();
@@ -111,20 +114,19 @@ public class SelectBrowser {
 	/*
 	 * 返回chrome的driver
 	 */
-	public WebDriver getChromeDriver(String driverPath) {
+	public WebDriver getChromeDriver(String driverPath,String hubUrl) {
 		/*
 		 * 浏览器设置 ChromeOptions options = new ChromeOptions();
 		 * options.addArguments("user-data-dir=C:"+File.separator+"Users"+File.
 		 * separator+"ake"+File.separator+"AppData"+File.separator+"Local"+File.
 		 * separator+"Google"+File.separator+"Chrome"+File.separator+"User Data"
 		 * );
-		 
 		System.setProperty("webdriver.chrome.driver", driverPath);
-		return new ChromeDriver();*/
-		
+		return new ChromeDriver();
+		*/
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		try {
-			return (new RemoteWebDriver(new URL("http://172.18.40.10:4444/wd/hub"), capabilities));
+			return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -144,10 +146,10 @@ public class SelectBrowser {
 		return new PhantomJSDriver(ghostCapabilities);
 	}
 	
-	public WebDriver getFirefoxDriver(){
+	public WebDriver getFirefoxDriver(String hubUrl){
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		try {
-			return (new RemoteWebDriver(new URL("http://172.18.40.10:4444/wd/hub"), capabilities));
+			return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
