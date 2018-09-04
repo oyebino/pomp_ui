@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -125,9 +126,11 @@ public class SelectBrowser {
 		 */
 		if(flat){
 			System.setProperty("webdriver.chrome.driver", driverPath);
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			DesiredCapabilities capability = new DesiredCapabilities();
+			capability.setBrowserName("chrome");
+			capability.setPlatform(Platform.WINDOWS);
 			try {
-				return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
+				return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capability));
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
