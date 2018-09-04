@@ -126,7 +126,7 @@ public class SelectBrowser {
 		 */
 		if(flat){
 			System.setProperty("webdriver.chrome.driver", driverPath);
-			DesiredCapabilities capability = new DesiredCapabilities();
+			DesiredCapabilities capability = new DesiredCapabilities().chrome();
 			capability.setBrowserName("chrome");
 			capability.setPlatform(Platform.WINDOWS);
 			try {

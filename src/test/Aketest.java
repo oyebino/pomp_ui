@@ -17,8 +17,10 @@ import java.util.TreeSet;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -34,23 +36,37 @@ import com.google.common.base.Joiner;
 import edu.emory.mathcs.backport.java.util.Arrays;
  
 
-public class Aketest {
-	WebDriver driver = null;
-	public void createChromeDriver(String url){
-		 DesiredCapabilities capability = DesiredCapabilities.chrome();
-	        capability.setBrowserName("chrome");
-	        capability.setPlatform(Platform.WINDOWS);
-	        try {
-	            driver = new RemoteWebDriver(new URL("http://172.18.40.10:4444/wd/hub"), capability);
-	        } catch (MalformedURLException e) {
-	            // TODO Auto-generated catch block
-	            e.printStackTrace();
-	        }
-	         driver.get(url);;
-	}
+public class AkeTest {
+	static WebDriver driver;
+	// 启用远程调用chrome
+    public static WebDriver createRemoteChromeDriver() {
+        DesiredCapabilities capability = DesiredCapabilities.chrome();
+        capability.setBrowserName("chrome");
+     //   capability.setVersion("62");
+        capability.setPlatform(Platform.WINDOWS);
+        try {
+            driver = new RemoteWebDriver(new URL("http://172.18.10.41:11450/wd/hub"), capability);
+        } catch (MalformedURLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return driver;
+    }
+
 	
 	public static void main(String[] args) {
-		Aketest a = new Aketest();
-		a.createChromeDriver("http://47.106.221.58:5002/#/login");
+		WebDriver driver = createRemoteChromeDriver();
+
+		driver.get("http://www.baidu.com");
+		WebElement baiduInput = driver.findElement(By.id("kw"));
+		baiduInput.sendKeys("Cherry_chrome");
+		WebElement btnSearch = driver.findElement(By.id("su"));
+		btnSearch.click();
+		try {
+			WebElement CherrySearchResult = driver.findElement(By.cssSelector(".op_dict3_font24.op_dict3_marginRight"));
+			System.out.println("Find search result Successfully!");
+		} catch (NoSuchElementException e) {
+			System.out.println("Can't find search result!, Search failed!");
+		}
 	}
 }
