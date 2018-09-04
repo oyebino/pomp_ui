@@ -2,7 +2,7 @@
 <!-- thread-count 定义同时启动的浏览器数 、parallel="tests" 表明每个test都是平级的 -->
 <suite name="autotest_wymall" parallel="tests" thread-count="1">
 	<!-- 配置是否远程Jenkins分布式执行 true,false-->
-	<parameter name="SeleniumGrid" value="false" />
+	<parameter name="SeleniumGrid" value="true" />
 	<!-- 配置远程执行的hubUrl (如http://172.18.10.41:11450)-->
 	<parameter name="hubUrl" value="http://172.18.10.41:11450" />
 	<!-- chrome,firefox,ghost和ie不区分大小写 -->
