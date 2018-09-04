@@ -124,6 +124,7 @@ public class SelectBrowser {
 		 * );
 		 */
 		if(flat){
+			System.setProperty("webdriver.chrome.driver", driverPath);
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			try {
 				return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
@@ -151,6 +152,9 @@ public class SelectBrowser {
 		return new PhantomJSDriver(ghostCapabilities);
 	}
 	
+	/*
+	 * 返回firefox的driver
+	 */
 	public WebDriver getFirefoxDriver(String hubUrl,Boolean flat){
 		if(flat){
 			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
