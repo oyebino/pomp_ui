@@ -18,10 +18,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 			<version>1.4</version>
 		</dependency>
  
-      	<dependency>
-			<groupId>cn.akeparking</groupId>
-			<artifactId>zb-test-reportng</artifactId>
-			<version>1.0.0</version>
+       	<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.6</version>
 			 <scope>test</scope>
 			 <exclusions>
                 <exclusion>
@@ -30,7 +30,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
                 </exclusion>
             </exclusions>
 		</dependency>
-		
+
+
     	<dependency>
 			<groupId>jaxen</groupId>
 			<artifactId>jaxen</artifactId>

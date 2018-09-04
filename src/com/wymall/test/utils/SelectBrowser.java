@@ -1,6 +1,8 @@
 package com.wymall.test.utils;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -11,22 +13,21 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.ITestContext;
 
 /**
  * @author eason.sun
  * @decription 在不同的平台上选择对应的浏览器,系统平台程序自动判断是什么平台
- * */
+ */
 public class SelectBrowser {
 	static Logger logger = Logger.getLogger(SelectBrowser.class.getName());
 
 	public WebDriver selectExplorerByName(String browser, ITestContext context) {
 		Properties props = System.getProperties(); // 获得系统属性集
 		String currentPlatform = props.getProperty("os.name"); // 操作系统名称
-		logger.info("当前操作系统是:[" + currentPlatform + "]");
-		logger.info("启动测试浏览器：[" + browser + "]");
-		//从testNG的配置文件读取参数driverConfgFilePath的值
+		// 从testNG的配置文件读取参数driverConfgFilePath的值
 		String driverConfgFilePath = context.getCurrentXmlTest().getParameter("driverConfgFilePath");
 		/** 声明好驱动的路径 */
 		String chromedriver_win = PropertiesDataProvider.getTestData(driverConfgFilePath, "chromedriver_win");
@@ -34,46 +35,38 @@ public class SelectBrowser {
 		String chromedriver_mac = PropertiesDataProvider.getTestData(driverConfgFilePath, "chromedriver_mac");
 		String ghostdriver_win = PropertiesDataProvider.getTestData(driverConfgFilePath, "ghostdriver_win");
 		String iedriver = PropertiesDataProvider.getTestData(driverConfgFilePath, "iedriver");
-		if (currentPlatform.toLowerCase().contains("win")) { //如果是windows平台
+
+		logger.info("当前操作系统是:[" + currentPlatform + "]");
+		logger.info("启动测试浏览器：[" + browser + "]");
+		if (currentPlatform.toLowerCase().contains("win")) { // 如果是windows平台
 
 			if (browser.equalsIgnoreCase("ie")) {
-				System.setProperty("webdriver.ie.driver", iedriver);
-				//IE的常规设置，便于执行自动化测试
-				DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
-				ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-				//返回ie浏览器对象
-				return new InternetExplorerDriver(ieCapabilities);
+				// 返回ie浏览器对象
+				return getIEDriver(iedriver);
+
 			} else if (browser.equalsIgnoreCase("chrome")) {
-				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--headless");
-				options.addArguments("--no-sandbox");
-				options.addArguments("user-data-dir=C:"+File.separator+"Users"+File.separator+"ake"+File.separator+"AppData"+File.separator+"Local"+File.separator+"Google"+File.separator+"Chrome"+File.separator+"User Data");
-				System.setProperty("webdriver.chrome.driver", chromedriver_win);
-				//返回谷歌浏览器对象
-				 return new ChromeDriver();
+				// 返回谷歌浏览器对象
+				return getChromeDriver(chromedriver_win);
+
 			} else if (browser.equalsIgnoreCase("firefox")) {
-				//返回火狐浏览器对象
-				return new FirefoxDriver();
+				// 返回火狐浏览器对象
+				//return new FirefoxDriver();
+				return getFirefoxDriver();
 
-			} else if(browser.equalsIgnoreCase("ghost")){
-				DesiredCapabilities ghostCapabilities = new DesiredCapabilities();
-				ghostCapabilities.setJavascriptEnabled(true);                       
-				ghostCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, ghostdriver_win);
-				//返回ghost对象
-			    return new PhantomJSDriver(ghostCapabilities);
-				
-			}else {
+			} else if (browser.equalsIgnoreCase("ghost")) {
+				// 返回ghost对象
+				return getGhostDriver(ghostdriver_win);
 
-				logger.error("The [" + browser + "]" + " explorer is not applicable  for  [" + currentPlatform + "] OS");
+			} else {
+				logger.error(
+						"The [" + browser + "]" + " explorer is not applicable  for  [" + currentPlatform + "] OS");
 				Assert.fail("The [" + browser + "]" + " explorer does not apply to  [" + currentPlatform + "] OS");
-
 			}
 
-		} else if (currentPlatform.toLowerCase().contains("linux")) { //如果是linux平台
+		} else if (currentPlatform.toLowerCase().contains("linux")) { // 如果是linux平台
 
 			if (browser.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", chromedriver_linux);
-				return new ChromeDriver();
+				return getChromeDriver(chromedriver_linux);
 
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				return new FirefoxDriver();
@@ -82,22 +75,84 @@ public class SelectBrowser {
 				Assert.fail("The [" + browser + "]" + " explorer does not apply to  [" + currentPlatform + "] OS");
 			}
 
-		} else if (currentPlatform.toLowerCase().contains("mac")) { //如果是mac平台
+		} else if (currentPlatform.toLowerCase().contains("mac")) { // 如果是mac平台
 			if (browser.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", chromedriver_mac);
-				return new ChromeDriver();
+				return getChromeDriver(chromedriver_mac);
+				
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				return new FirefoxDriver();
+				
 			} else {
 				logger.error("The [" + browser + "]" + " explorer does not apply to  [" + currentPlatform + "] OS");
 				Assert.fail("The [" + browser + "]" + " explorer does not apply to  [" + currentPlatform + "] OS");
 			}
 
 		} else
-			logger.error("The [" + currentPlatform + "] is not supported for this automation frame,please change the OS(Windows,MAC or LINUX)");
-		
-		Assert.fail("The [" + currentPlatform + "] is not supported for this automation frame,please change the OS(Windows,MAC or LINUX)");
+			logger.error("The [" + currentPlatform
+					+ "] is not supported for this automation frame,please change the OS(Windows,MAC or LINUX)");
+
+		Assert.fail("The [" + currentPlatform
+				+ "] is not supported for this automation frame,please change the OS(Windows,MAC or LINUX)");
 		return null;
 	}
 
+	/*
+	 * 返回ie的driver
+	 */
+	public WebDriver getIEDriver(String driverPath) {
+		System.setProperty("webdriver.ie.driver", driverPath);
+		// IE的常规设置，便于执行自动化测试
+		DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
+		ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+		// 返回ie浏览器对象
+		return new InternetExplorerDriver(ieCapabilities);
+	}
+
+	/*
+	 * 返回chrome的driver
+	 */
+	public WebDriver getChromeDriver(String driverPath) {
+		/*
+		 * 浏览器设置 ChromeOptions options = new ChromeOptions();
+		 * options.addArguments("user-data-dir=C:"+File.separator+"Users"+File.
+		 * separator+"ake"+File.separator+"AppData"+File.separator+"Local"+File.
+		 * separator+"Google"+File.separator+"Chrome"+File.separator+"User Data"
+		 * );
+		 
+		System.setProperty("webdriver.chrome.driver", driverPath);
+		return new ChromeDriver();*/
+		
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		try {
+			return (new RemoteWebDriver(new URL("http://172.18.40.10:4444/wd/hub"), capabilities));
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			logger.error("浏览器driver获取异常...");
+			return null;
+		}
+	}
+
+	/*
+	 * 返回Ghost的driver
+	 */
+	public WebDriver getGhostDriver(String driverPath) {
+		DesiredCapabilities ghostCapabilities = new DesiredCapabilities();
+		ghostCapabilities.setJavascriptEnabled(true);
+		ghostCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, driverPath);
+		// 返回ghost对象
+		return new PhantomJSDriver(ghostCapabilities);
+	}
+	
+	public WebDriver getFirefoxDriver(){
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		try {
+			return (new RemoteWebDriver(new URL("http://172.18.40.10:4444/wd/hub"), capabilities));
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			logger.error("浏览器driver获取异常...");
+			return null;
+		}
+	}
 }

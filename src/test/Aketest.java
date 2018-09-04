@@ -1,6 +1,8 @@
 package test;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -15,10 +17,13 @@ import java.util.TreeSet;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Sleeper;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -30,38 +35,22 @@ import edu.emory.mathcs.backport.java.util.Arrays;
  
 
 public class Aketest {
-	public static String getListFloderPath(String path) {
-		List list = new ArrayList<String> ();
-		File file = new File(getFloderPath(path));
-		if (file.exists()) {
-			File[] files = file.listFiles();
-			for (File file2 : files) {
-				if (file2.isFile()) {
-					list.add("../../" + file2.toString());
-				} 
-			}
-		}else{
-			return "文件不存在...";
-		}
-		if(!list.isEmpty()){
-			return Joiner.on(";").join(list);
-		}else{
-			return "没有截图文件...";
-		}
+	WebDriver driver = null;
+	public void createChromeDriver(String url){
+		 DesiredCapabilities capability = DesiredCapabilities.chrome();
+	        capability.setBrowserName("chrome");
+	        capability.setPlatform(Platform.WINDOWS);
+	        try {
+	            driver = new RemoteWebDriver(new URL("http://172.18.40.10:4444/wd/hub"), capability);
+	        } catch (MalformedURLException e) {
+	            // TODO Auto-generated catch block
+	            e.printStackTrace();
+	        }
+	         driver.get(url);;
 	}
 	
-	public static String getFloderPath(String filePath){
-		String newPath = filePath.replaceAll("\\\\", "/");
-		int index = newPath.lastIndexOf('/');
-		if(index != -1){
-			return newPath.substring(0 , index + 1);
-		}
-		return newPath;
-	}
 	public static void main(String[] args) {
-		
-		String path = "result\\screenshot\\system\\Miniprogram_user\\002_setPower\\运行错误_2018_08_28_16_14_14.jpg";
-		System.out.println(getListFloderPath(getFloderPath(path)));
-		
+		Aketest a = new Aketest();
+		a.createChromeDriver("http://47.106.221.58:5002/#/login");
 	}
 }

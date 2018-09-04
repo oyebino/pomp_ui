@@ -162,7 +162,7 @@ public class TestResultListener extends TestListenerAdapter {
 
 		if (!"".equals(filePath)) {
 			Reporter.setCurrentTestResult(tr);
-	//		Reporter.log(filePath);
+			//Reporter.log("");
 			// 把截图写入到Html报告中方便查看
 			String failScreenShotFile = filePath.replaceAll("\\\\", "/");
 			String screenShotListfiles = getListFloderPath(filePath).replaceAll("\\\\", "/");

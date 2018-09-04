@@ -19,7 +19,6 @@
 	<!-- 定义测试模块，用test标签包围 -->
 
 
-
 	<test name="A_parking" preserve-order="true">
 		<packages>
 			<package name="com.wymall.test.testcases.parking.*" />
@@ -31,17 +30,19 @@
 			<package name="com.wymall.test.testcases.system.*" />
 		</packages>
 	</test>
+	
 	<test name="C_perferential" preserve-order="true">
 		<packages>
 			<package name="com.wymall.test.testcases.preferential.*" />
 		</packages>
 	</test>
+	
 	<test name="D_monthticket" preserve-order="true">
 		<packages>
 			<package name="com.wymall.test.testcases.monthticket.*" />
 		</packages>
 	</test>
--->	
+	-->
 	
 
 	<listeners>
