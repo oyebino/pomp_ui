@@ -25,7 +25,8 @@ public class SelectBrowser {
 	static Logger logger = Logger.getLogger(SelectBrowser.class.getName());
 
 	public WebDriver selectExplorerByName(String browser, ITestContext context) {
-		//管理端
+		//从testNG的配置文件读取管理端url
+		Boolean flat = Boolean.getBoolean(context.getCurrentXmlTest().getParameter("SeleniumGrid"));
 		String hubUrl = context.getCurrentXmlTest().getParameter("hubUrl");
 		
 		Properties props = System.getProperties(); // 获得系统属性集
@@ -49,12 +50,12 @@ public class SelectBrowser {
 
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				// 返回谷歌浏览器对象
-				return getChromeDriver(chromedriver_win,hubUrl);
+				return getChromeDriver(chromedriver_win,hubUrl,flat);
 
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				// 返回火狐浏览器对象
 				//return new FirefoxDriver();
-				return getFirefoxDriver(hubUrl);
+				return getFirefoxDriver(hubUrl,flat);
 
 			} else if (browser.equalsIgnoreCase("ghost")) {
 				// 返回ghost对象
@@ -69,7 +70,7 @@ public class SelectBrowser {
 		} else if (currentPlatform.toLowerCase().contains("linux")) { // 如果是linux平台
 
 			if (browser.equalsIgnoreCase("chrome")) {
-				return getChromeDriver(chromedriver_linux,hubUrl);
+				return getChromeDriver(chromedriver_linux,hubUrl,flat);
 
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				return new FirefoxDriver();
@@ -80,7 +81,7 @@ public class SelectBrowser {
 
 		} else if (currentPlatform.toLowerCase().contains("mac")) { // 如果是mac平台
 			if (browser.equalsIgnoreCase("chrome")) {
-				return getChromeDriver(chromedriver_mac,hubUrl);
+				return getChromeDriver(chromedriver_mac,hubUrl,flat);
 				
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				return new FirefoxDriver();
@@ -114,25 +115,29 @@ public class SelectBrowser {
 	/*
 	 * 返回chrome的driver
 	 */
-	public WebDriver getChromeDriver(String driverPath,String hubUrl) {
+	public WebDriver getChromeDriver(String driverPath,String hubUrl,Boolean flat) {
 		/*
 		 * 浏览器设置 ChromeOptions options = new ChromeOptions();
 		 * options.addArguments("user-data-dir=C:"+File.separator+"Users"+File.
 		 * separator+"ake"+File.separator+"AppData"+File.separator+"Local"+File.
 		 * separator+"Google"+File.separator+"Chrome"+File.separator+"User Data"
 		 * );
-		System.setProperty("webdriver.chrome.driver", driverPath);
-		return new ChromeDriver();
-		*/
-		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		try {
-			return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			logger.error("浏览器driver获取异常...");
-			return null;
+		 */
+		if(!flat){
+			System.setProperty("webdriver.chrome.driver", driverPath);
+			return new ChromeDriver();
+		}else{
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			try {
+				return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				logger.error("浏览器driver获取异常...");
+				return null;
+			}
 		}
+		
 	}
 
 	/*
@@ -146,7 +151,10 @@ public class SelectBrowser {
 		return new PhantomJSDriver(ghostCapabilities);
 	}
 	
-	public WebDriver getFirefoxDriver(String hubUrl){
+	public WebDriver getFirefoxDriver(String hubUrl,Boolean flat){
+		if(!flat){
+			return new FirefoxDriver();
+		}
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		try {
 			return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capabilities));
