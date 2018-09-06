@@ -4,7 +4,7 @@
 	<!-- 配置是否远程Jenkins分布式执行 true,false-->
 	<parameter name="SeleniumGrid" value="true" />
 	<!-- 配置远程执行的hubUrl (如http://172.18.10.41:11450)-->
-	<parameter name="hubUrl" value="http://172.18.10.41:11450" />
+	<parameter name="hubUrl" value="http://193.168.1.157:4444" />
 	<!-- chrome,firefox,ghost和ie不区分大小写 -->
 	<parameter name="browserName" value="chrome" />
 	<!-- user的属性文件地址,此配置文件存储了用户名和密码等信息 -->
@@ -23,31 +23,33 @@
 	<!-- 定义测试模块，用test标签包围 -->
 
 
-
+<!--
 	<test name="A_parking" preserve-order="true">
 		<packages>
 			<package name="com.wymall.test.testcases.parking.*" />
 		</packages>
 	</test>
-<!--
+-->	
 	<test name="B_system" preserve-order="true">
-		<packages>
-			<package name="com.wymall.test.testcases.system.*" />
-		</packages>
+		<classes>
+			<class name="com.wymall.test.testcases.system.miniprogram_user.Miniprogram_userPage_001_addMinProUser_Test" />
+		</classes>
 	</test>
-	
+
+<!--	
 	<test name="C_perferential" preserve-order="true">
 		<packages>
 			<package name="com.wymall.test.testcases.preferential.*" />
 		</packages>
 	</test>
 	
+
 	<test name="D_monthticket" preserve-order="true">
 		<packages>
 			<package name="com.wymall.test.testcases.monthticket.*" />
 		</packages>
 	</test>
-	-->
+-->
 	
 
 	<listeners>

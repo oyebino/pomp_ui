@@ -6,16 +6,9 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 public class TestDB {
-
-    @BeforeTest()
-    public void beforeTest() {
-    	
-        System.out.println("@BeforeTest");
-    }
-
-    @AfterTest()
-    public void afterTest() {
-        System.out.println("@AfterTest");
-    }
-
+	public static void main(String[] args) {
+		String flat = "false";
+		Boolean fa = Boolean.parseBoolean(flat);
+		System.out.println(fa);
+	}
 }

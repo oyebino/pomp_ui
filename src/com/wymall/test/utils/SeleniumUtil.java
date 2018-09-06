@@ -334,10 +334,11 @@ public class SeleniumUtil {
 		} catch (AssertionError e) {
 			logger.error("期望的文字是 [" + expected + "] 但是找到了 [" + actual + "]");
 			Assert.fail("期望的文字是 [" + expected + "] 但是找到了 [" + actual + "]");
-
+		}catch(NullPointerException e){
+			logger.error("期望的文字是 [" + expected + "] 但是找到了 [" + actual + "]");
+			Assert.fail("期望的文字是 [" + expected + "] 但是找到了 [" + actual + "]");
 		}
 		logger.info("找到了期望的文字: [" + expected + "]");
-
 	}
 
 	/*
@@ -1274,17 +1275,18 @@ public class SeleniumUtil {
 	 * @param text
 	 */
 	public String waitElementAttribute(By by){
-		String text = null;
-		for(int i=1;i<60;i++){
+		String text = "";
+		for(int i=1;i<4;i++){
 			if(driver.findElement(by).isDisplayed()){
 				text = driver.findElement(by).getText();
 				logger.info("页面元素:["+by+"]已变化");
-				break;
+				return text;
 			}
 			else {
 				waitMilliSecond(250);
 			}
 		}
+		text = driver.findElement(by).getAttribute("innerText");
 		return text;
 	}
 	

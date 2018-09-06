@@ -27,7 +27,7 @@ public class SelectBrowser {
 
 	public WebDriver selectExplorerByName(String browser, ITestContext context) {
 		//从testNG的配置文件读取管理端url
-		Boolean flat = Boolean.getBoolean(context.getCurrentXmlTest().getParameter("SeleniumGrid"));
+		Boolean flat = Boolean.parseBoolean(context.getCurrentXmlTest().getParameter("SeleniumGrid"));
 		String hubUrl = context.getCurrentXmlTest().getParameter("hubUrl");
 		
 		Properties props = System.getProperties(); // 获得系统属性集
@@ -129,7 +129,7 @@ public class SelectBrowser {
 			capability.setBrowserName("chrome");
 			capability.setPlatform(Platform.WINDOWS);
 			try {
-				return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capability));
+				return (new RemoteWebDriver(new URL("http://193.168.1.157:4444/wd/hub"), capability));
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
