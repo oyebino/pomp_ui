@@ -130,7 +130,7 @@ public class SelectBrowser {
 			capability.setBrowserName("chrome");
 			capability.setPlatform(Platform.WINDOWS);
 			try {
-				return (new RemoteWebDriver(new URL("http://193.168.1.157:4444/wd/hub"), capability));
+				return (new RemoteWebDriver(new URL(hubUrl + "/wd/hub"), capability));
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
