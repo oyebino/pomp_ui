@@ -48,5 +48,6 @@
 		<ACTION number="45" name="模拟进出场" class="com.wymall.test.utils.actions.impl.PassAndOut"></ACTION>
 		<ACTION number="46" name="缴费" class="com.wymall.test.utils.actions.impl.PayCharge"></ACTION>
 		<ACTION number="47" name="创建车牌" class="com.wymall.test.utils.actions.impl.CreateCarNum"></ACTION>
+		<ACTION number="48" name="检查列表的文本" class="com.wymall.test.utils.actions.impl.CheckCommonTableText"></ACTION>
 	</ACTIONS>
 </ROOT>
