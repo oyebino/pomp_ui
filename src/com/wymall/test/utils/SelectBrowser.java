@@ -71,7 +71,8 @@ public class SelectBrowser {
 		} else if (currentPlatform.toLowerCase().contains("linux")) { // 如果是linux平台
 
 			if (browser.equalsIgnoreCase("chrome")) {
-				return getChromeDriver(chromedriver_linux,hubUrl,flat);
+				//return getChromeDriver(chromedriver_linux,hubUrl,flat);
+				return getChromeDriver(chromedriver_win,hubUrl,flat);
 
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				return new FirefoxDriver();
