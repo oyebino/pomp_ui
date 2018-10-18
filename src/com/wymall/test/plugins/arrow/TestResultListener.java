@@ -49,7 +49,8 @@ public class TestResultListener extends TestListenerAdapter {
 	public void onTestFailure(ITestResult tr) {
 		super.onTestFailure(tr);
 		logger.warn(tr.getName() + " 测试用例执行失败！");
-		WebDriver webDriver = (WebDriver) testContext.getAttribute("SELENIUM_DRIVER"); // 这里就是取driver
+//		WebDriver webDriver = (WebDriver) testContext.getAttribute("SELENIUM_DRIVER"); // 这里就是取driver
+		WebDriver webDriver = (WebDriver) ParamConstant.TEST_CONTEXT.getAttribute("SELENIUM_DRIVER"); // 这里就是取driver
 		browser = String.valueOf(testContext.getCurrentXmlTest().getParameter("browserName"));
 		saveScreenShot(tr, webDriver,browser);
 	}
@@ -57,7 +58,8 @@ public class TestResultListener extends TestListenerAdapter {
 	@Override
 	public void onTestSkipped(ITestResult tr) {
 		super.onTestSkipped(tr);
-		WebDriver webDriver = (WebDriver) testContext.getAttribute("SELENIUM_DRIVER");
+//		WebDriver webDriver = (WebDriver) testContext.getAttribute("SELENIUM_DRIVER");
+		WebDriver webDriver = (WebDriver) ParamConstant.TEST_CONTEXT.getAttribute("SELENIUM_DRIVER"); // 这里就是取driver
 		logger.warn(tr.getName() + " 测试用例由于某些原因被跳过！");
 		saveScreenShot(tr, webDriver,browser);
 

@@ -2,6 +2,8 @@ package com.wymall.test.utils.actions;
 
 import java.util.Map;
 
+import org.testng.ITestContext;
+
 /**
  * 参数常量
  * @author alvis
@@ -45,4 +47,9 @@ public class ParamConstant {
 	public static final String CASE_NAME="CASE_NAME";
 	
 	public static Map CURR_PARAM  = null;
+	
+	/**
+	 * 全局变量，主要用于失败截图
+	 */
+	public static ITestContext TEST_CONTEXT = null;
 }

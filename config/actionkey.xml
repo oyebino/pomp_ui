@@ -49,5 +49,8 @@
 		<ACTION number="46" name="缴费" class="com.wymall.test.utils.actions.impl.PayCharge"></ACTION>
 		<ACTION number="47" name="创建车牌" class="com.wymall.test.utils.actions.impl.CreateCarNum"></ACTION>
 		<ACTION number="48" name="检查列表的文本" class="com.wymall.test.utils.actions.impl.CheckCommonTableText"></ACTION>
+		<ACTION number="49" name="高亮元素" class="com.wymall.test.utils.actions.impl.HighlightElement"></ACTION>
+		<ACTION number="50" name="创建月票号" class="com.wymall.test.utils.actions.impl.CreateMonthTicketNum"></ACTION>
+		<ACTION number="51" name="发放商家劵" class="com.wymall.test.utils.actions.impl.SendCoupon"></ACTION>
 	</ACTIONS>
 </ROOT>

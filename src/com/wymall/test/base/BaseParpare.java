@@ -19,6 +19,7 @@ import com.wymall.test.utils.ExcelDataProvider;
 import com.wymall.test.utils.LogConfiguration;
 import com.wymall.test.utils.PropertiesDataProvider;
 import com.wymall.test.utils.SeleniumUtil;
+import com.wymall.test.utils.actions.ParamConstant;
 public class BaseParpare {
 	//输出本页面日志 初始化
 	static Logger logger = Logger.getLogger(BaseParpare.class.getName());
@@ -60,8 +61,7 @@ public class BaseParpare {
 		}
 		//设置一个testng上下文属性，将driver存起来，之后可以使用context随时取到，主要是提供arrow 获取driver对象使用的，因为arrow截图方法需要一个driver对象
 		testContext.setAttribute("SELENIUM_DRIVER", seleniumUtil.driver);
-		
-		
+		ParamConstant.TEST_CONTEXT = testContext;
 	}
 
 	@AfterClass

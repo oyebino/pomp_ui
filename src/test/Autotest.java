@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
@@ -30,11 +31,11 @@ public class Autotest {
 			for (File file2 : files) {
 				if (file2.isFile()) {
 					//System.out.println("文件夹:" + file2.getAbsolutePath());
-					list.add(file2.toString());
+					list.add(file2.getAbsolutePath());
 				//	list.add(getMiddleStr(file2.toString().replaceAll("\\\\", "/"),"/"));
 				} else {
 				//	System.out.println("文件:" + file2.getAbsolutePath());
-					getListFloder(file2.toString(),list);
+					getListFloder(file2.getAbsolutePath(),list);
 				}
 			}
 		}else{
@@ -67,13 +68,11 @@ public class Autotest {
    public static void main(String[] args) throws FileNotFoundException, IOException, BiffException {
 	   Autotest a=new Autotest();
 		Set<String> list = new TreeSet<String>();
-	   String path = "res/testcase/";
-	   Set<String> li = a.getListFloder(path, list);
-	   for(String file  : li){
-		   System.out.println(file + "**************************");
-		   for(int j=1;j<getSheetNum(file);j++){
-			   System.out.println(getSheetName(j,file));
-		   }
-	   }
+		String path = "D:/uiProject/autotest_wymall_backend/src/com/wymall/test/testcases";
+		a.getListFloder(path,list);
+		for(Iterator iter = ((TreeSet<String>) list).descendingIterator(); iter.hasNext(); ) { 
+		    
+		    System.out.println(iter.next());
+		}
    }
 }

@@ -997,7 +997,7 @@ public class SeleniumUtil {
 	 */
 	public void loadPage(){
 		waitMilliSecond(500);
-		for(int i=1;i<30;i++){
+		for(int i=1;i<60;i++){
 			if(driver.findElement(By.xpath("//*[@id='app']/div[@class='ake_loading']")).isDisplayed()){
 				waitMilliSecond(250);
 			}
@@ -1375,12 +1375,28 @@ public class SeleniumUtil {
 	}
 	
 	/**
+	 * 每隔一秒check一下页面加载是否完成，check次数是25
+	 */
+	public void checkPageIsReady(){
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		for(int i=0;i<25;i++){
+			if ("complete".equals(js
+	                .executeScript("return document.readyState").toString())) {
+	            break;
+	        }
+			waitMilliSecond(1000);
+		}
+	}
+	
+	
+	/**
 	 * 模拟进出场; 
 	 * mockType, 0:进场；1：离场
 	 */
 	public void passAndOut(String carNum, String mockType,String FUNCTION_NAME,String CASE_NAME) {
 		try{
-		switchToWindow("模拟进出场");
+			switchToWindow("模拟进出场","http://172.18.40.8:9009");
+		
 		type(By.xpath("//input[@name='carNo']"),carNum);
 		type(By.xpath("//input[@name='mockType']"),mockType);
 		findElementBy(By.xpath("//button[contains(text(),'进出场')]")).click();
@@ -1410,7 +1426,7 @@ public class SeleniumUtil {
 	/**
 	 * 根据标题切换浏览器
 	 */
-	public void switchToWindow(String windowTitle){
+	public void switchToWindow(String windowTitle,String url){
 		boolean flag = false;
 	    try { 
 	    	//将页面上所有的windowshandle放在入set集合当中
@@ -1439,9 +1455,10 @@ public class SeleniumUtil {
 	    }
         if(flag == false){
         	logger.info("没有【" + windowTitle + "】浏览器窗口...重新打开..");
-        	executeJS("window.open('http://172.18.40.8:9009');");
+        	executeJS("window.open('" + url + "');");
         	waitMilliSecond(1000);
-        	switchToWindow("模拟进出场");
+        	switchToWindow(windowTitle,url);
+        	checkPageIsReady();	//等待页面加载完成
         }
 	}
 	
@@ -1450,7 +1467,7 @@ public class SeleniumUtil {
 	 */
 	public void payCharge(String carNum,String parkCode,String FUNCTION_NAME,String CASE_NAME) {
 		try{
-		switchToWindow("模拟进出场");
+		switchToWindow("模拟进出场","http://172.18.40.8:9009");
 		//查费操作 
 		findElementBy(By.xpath("//input[@class='parkCode1']")).sendKeys(parkCode);
 		findElementBy(By.xpath("//input[@class='carNo1']")).sendKeys(carNum);
@@ -1462,6 +1479,7 @@ public class SeleniumUtil {
 			if(value.equals("")) {
 				waitMilliSecond(1000);
 			}else{
+				waitMilliSecond(1000);
 				break;
 			}
 		}
@@ -1492,13 +1510,74 @@ public class SeleniumUtil {
 	/**
 	 * 生成随机数
 	 */
-	public static String randomNum(int i){
+	public String randomNum(int i){
 	 	String result = "";
 		for (int j=0;j<i;j++){
 			int a =(int) (Math.random()*9+1);
 			result+=String.valueOf(a);
 		}
 		return result;
+	}
+	
+	/**
+	 * 高亮元素
+	 */
+	public void highlightElement(By by) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("element = arguments[0];" + "original_style = element.getAttribute('style');"
+				+ "element.setAttribute('style', original_style + \";"
+				+ "background: yellow; border: 2px solid red;\");"
+				+ "setTimeout(function(){element.setAttribute('style', original_style);}, 1000);", findElementBy(by));
+		waitMilliSecond(1000);
+	}
+	
+	/**
+	 * 发放商家券
+	 */
+	public void sendCoupon(String FUNCTION_NAME,String CASE_NAME,String carNum) {
+		try {
+			switchToWindow("登录", "http://test01.yidianting.com.cn/mgr-weixin/passport/signin.do");
+			// 登录商家
+			findElementBy(By.xpath("//input[@id='phone']")).sendKeys("13800138001");
+			findElementBy(By.xpath("//input[@id='password']")).sendKeys("123456");
+			findElementBy(By.xpath("//button[text()='登录']")).click();
+			waitForElementToLoad(10,By.xpath("//span[text()='发放商家券']"));
+			findElementBy(By.xpath("//span[text()='发放商家券']")).click();
+			checkPageIsReady();
+			waitMilliSecond(1000);
+			if(findElementBy(By.xpath("//a[@class='switch-keyboard special-kb']")).isDisplayed()){
+				findElementBy(By.xpath("//a[@class='switch-keyboard special-kb']")).click();
+			}
+			findElementBy(By.xpath("//input[@placeholder='请输入发放的车牌号']")).sendKeys(carNum);
+			waitMilliSecond(1000);
+			findElementBy(By.xpath("//input[@value='发券']")).click();
+			waitMilliSecond(2000);
+			WebElement eb;
+			String text=null;
+			for(int i=0;i<10;i++){
+				 eb = findElementBy(By.xpath("//h3[text()='请稍候...']/../../div"));
+				if(eb.isDisplayed()){
+					waitMilliSecond(1000);
+				}else{
+					waitMilliSecond(1000);
+					text = findElementBy(By.xpath("//div[@class='modal-tip login-modal']")).getAttribute("innerText");
+					if(text!=null){
+						break;
+					}
+				}
+			}
+			
+			isTextCorrect(text, "发券成功");
+			logger.info(carNum + "发券成功");
+			screenShot(FUNCTION_NAME,CASE_NAME,"0发放商家劵");
+			driver.close();
+			//返回原来的窗口
+			backToOriginalWindow();
+		} catch (Exception e) {
+			e.printStackTrace();
+			logger.error("发放失败...");
+			Assert.fail("发放失败...");
+		}
 	}
 	
 }

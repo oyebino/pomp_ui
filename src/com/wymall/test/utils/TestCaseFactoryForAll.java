@@ -95,6 +95,7 @@ public class TestCaseFactoryForAll {
 						String others = sheetName.substring(sheetName.indexOf("_") + 1).substring(1);
 						String function = firstLetter.toLowerCase() + others;
 						writer.write(
+								//(priority = " + String.valueOf(Integer.parseInt(sheetName.substring(0,3))) + ")
 								"@Test \n" + " public void" + " " + function + "() { \n" + "SuperAction.parseExcel(\"" + fatherFunction +"/"
 										+ functionName.replaceFirst(functionName.substring(0, 1),
 												functionName.substring(0, 1).toUpperCase())

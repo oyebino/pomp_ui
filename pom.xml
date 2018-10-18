@@ -17,7 +17,7 @@
 			<artifactId>velocity-dep</artifactId>
 			<version>1.4</version>
 		</dependency>
-  <!--
+  
 		 <dependency>
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
@@ -30,7 +30,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency> 
--->
+<!--
 		<dependency>
 			<groupId>cn.akeparking</groupId>
 			<artifactId>zb-test-reportng</artifactId>
@@ -43,7 +43,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
+-->
 		<dependency>
 			<groupId>jaxen</groupId>
 			<artifactId>jaxen</artifactId>

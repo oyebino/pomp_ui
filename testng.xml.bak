@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- thread-count 定义同时启动的浏览器数 、parallel="tests" 表明每个test都是平级的 -->
 <suite name="autotest_wymall" parallel="tests" thread-count="2">
 	<!-- chrome,firefox,ghost和ie不区分大小写 -->

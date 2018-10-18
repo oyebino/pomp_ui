@@ -21,7 +21,7 @@ public class SwitchNewWindow implements ActionType {
 		String locatorType=(String) parms.get(ParamConstant.LOCATOR_TYPE);
 		String locatorValue=(String) parms.get(ParamConstant.LOCATOR_VALUE);
 		
-		seleniumUtil.switchToWindow(testData);
+		seleniumUtil.switchToWindow(testData,"");
 	}
 
 }
