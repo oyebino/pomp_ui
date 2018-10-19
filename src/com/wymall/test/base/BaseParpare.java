@@ -36,8 +36,6 @@ public class BaseParpare {
 	//	@BeforeSuite
 	/**启动浏览器并打开测试页面*/
 	public void startTest(ITestContext context) {
-		//使用headless模式
-		System.setProperty("java.awt.headless", "true");
 		LogConfiguration.initLog(this.getClass().getName());
 		seleniumUtil = new SeleniumUtil();
 		// 这里得到了context值

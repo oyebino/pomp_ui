@@ -23,6 +23,7 @@
 	<!-- 定义测试模块，用test标签包围 -->
 	<test name="A_parking" preserve-order="true">
 	<classes preserve-order="true">
+	<!--  
 		<class
 			name="com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_001_addVisitorCar_Test" />
 		<class
@@ -133,11 +134,12 @@
 			name="com.wymall.test.testcases.parking.reportManager.wayChargeReport.WayChargeReportPage_002_exportWayChargeReport_Test" />
 		<class
 			name="com.wymall.test.testcases.parking.reportManager.wayComeAndOutReport.WayComeAndOutReportPage_001_filterWayComeAndOutReport_Test" />
+		-->
 		<class
 			name="com.wymall.test.testcases.parking.reportManager.wayComeAndOutReport.WayComeAndOutReportPage_002_exportWayComeAndOutReport_Test" />
 	</classes>
 	</test>
-	
+<!--  
 	<test name="B_preferential" preserve-order="true">
 		<classes preserve-order="true">
 			<class
@@ -379,7 +381,7 @@
 		</classes>
 	</test>
 	
-	
+-->	
 	
 
 	<listeners>
