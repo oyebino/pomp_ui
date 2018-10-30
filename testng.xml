@@ -21,19 +21,16 @@
 	<parameter name="waitMillisecondsForAlert" value="40000" />
 
 	<!-- 定义测试模块，用test标签包围 -->
-	<test name="A_parking" preserve-order="true">
+		<test name="A_parking" preserve-order="true">
 	<classes preserve-order="true">
-	<!--  
 		<class
 			name="com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_001_addVisitorCar_Test" />
 		<class
 			name="com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_002_filterVisitorCar_Test" />
 		<class
 			name="com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_003_editVisitorCar_Test" />
-		-->
 		<class
 			name="com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_004_delVisitorCar_Test" />
-		<!--  
 		<class
 			name="com.wymall.test.testcases.parking.carInfoManager.CarInfoManagerPage_005_exportVisitorCar_Test" />
 		<class
@@ -138,10 +135,9 @@
 			name="com.wymall.test.testcases.parking.reportManager.wayComeAndOutReport.WayComeAndOutReportPage_001_filterWayComeAndOutReport_Test" />
 		<class
 			name="com.wymall.test.testcases.parking.reportManager.wayComeAndOutReport.WayComeAndOutReportPage_002_exportWayComeAndOutReport_Test" />
-	-->
 	</classes>
 	</test>
-  <!--  
+	
 	<test name="B_preferential" preserve-order="true">
 		<classes preserve-order="true">
 			<class
@@ -265,14 +261,6 @@
 			<class
 				name="com.wymall.test.testcases.monthticket.monthTicketManager.MonthTicketManagerPage_019_delInternalTicketWayside_Test" />	
 			<class
-				name="com.wymall.test.testcases.monthticket.monthTicketSetting.MonthTicketSettingPage_001_addTicketSetting_Test" />
-			<class
-				name="com.wymall.test.testcases.monthticket.monthTicketSetting.MonthTicketSettingPage_002_editTicketSetting_Test" />
-			<class
-				name="com.wymall.test.testcases.monthticket.monthTicketSetting.MonthTicketSettingPage_003_filterTicketSetting_Test" />
-			<class
-				name="com.wymall.test.testcases.monthticket.monthTicketSetting.MonthTicketSettingPage_004_delTicketSetting_Test" />
-			<class
 				name="com.wymall.test.testcases.monthticket.parkCustomerInfo.ParkCustomerInfoPage_001_addParkCustomerInfo_Test" />
 			<class
 				name="com.wymall.test.testcases.monthticket.parkCustomerInfo.ParkCustomerInfoPage_002_editParkCustomerInfo_Test" />
@@ -382,7 +370,8 @@
 			name="com.wymall.test.testcases.system.user.UserPage_006_delUser_Test" />
 		</classes>
 	</test>
--->
+	
+
 	<listeners>
 		<!-- arrow插件实现用例失败重跑以及生成测试报告 -->
 		<listener class-name="com.wymall.test.plugins.arrow.TestResultListener" />

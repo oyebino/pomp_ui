@@ -168,7 +168,7 @@ public class TestResultListener extends TestListenerAdapter {
 			// 把截图写入到Html报告中方便查看
 			String failScreenShotFile = filePath.replaceAll("\\\\", "/");
 			String screenShotListfiles = getListFloderPath(filePath).replaceAll("\\\\", "/");
-			Reporter.log("<img onclick=\"viewmore(event)\" data-preview=\"" + screenShotListfiles + "\" src=\"../../../" + failScreenShotFile + "\"/>");
+			Reporter.log("<img onclick=\"viewmore(event)\" data-preview=\"" + screenShotListfiles + "\" src=\"../../" + failScreenShotFile + "\"/>");
 		}
 	}
 	
@@ -180,7 +180,7 @@ public class TestResultListener extends TestListenerAdapter {
 			File[] files = file.listFiles();
 			for (File file2 : files) {
 				if (file2.isFile()) {
-					list.add("../../../" + file2.toString());
+					list.add("../../" + file2.toString());
 				} 
 			}
 		}else{
