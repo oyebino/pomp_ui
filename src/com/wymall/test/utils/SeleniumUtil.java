@@ -486,6 +486,7 @@ public class SeleniumUtil {
 		for(WebElement obj:objs){
 			if(obj.getText().trim().equals(text)){
 				obj.click();
+				loadPage();
 				logger.info("你选择了："+text);
 				return;
 			}
@@ -804,6 +805,7 @@ public class SeleniumUtil {
 					return;
 				} else if (element.getAttribute("class").contains("false_full")) {
 					element.click();
+					waitMilliSecond(1000);
 					loadPage();
 					logger.info("The element: [" + getLocatorByElement(element, ">") + "] is selected");
 					return;
@@ -1541,8 +1543,8 @@ public class SeleniumUtil {
 			findElementBy(By.xpath("//input[@id='phone']")).sendKeys("13800138001");
 			findElementBy(By.xpath("//input[@id='password']")).sendKeys("123456");
 			findElementBy(By.xpath("//button[text()='登录']")).click();
-			waitForElementToLoad(10,By.xpath("//span[text()='发放商家券']"));
-			findElementBy(By.xpath("//span[text()='发放商家券']")).click();
+			waitForElementToLoad(10,By.xpath("//span[text()='发放优惠券']"));
+			findElementBy(By.xpath("//span[text()='发放优惠券']")).click();
 			checkPageIsReady();
 			waitMilliSecond(1000);
 			if(findElementBy(By.xpath("//a[@class='switch-keyboard special-kb']")).isDisplayed()){
