@@ -12,7 +12,7 @@
 	<!-- driver的属性配置文件保存路径 -->
 	<parameter name="driverConfgFilePath" value="config/driver.properties" />
 	<!-- 定义测试的站点 -->
-	<parameter name="testurl" value="http://47.106.221.58:5002/#/login" />
+	<parameter name="testurl" value="http://mgr.k8s.yidianting.com.cn/#/" />
 	<!-- 进程等待1秒中的控制时间 -->
 	<parameter name="sleepTime" value="800" />
 	<!-- 页面元素10秒不出现超时时间 -->
@@ -21,14 +21,23 @@
 	<parameter name="waitMillisecondsForAlert" value="40000" />
 
 	<!-- 定义测试模块，用test标签包围 -->
-	<test name="A_parking" preserve-order="true">
+	<test name="D_system" preserve-order="true">
 	<classes preserve-order="true">
 		<class
-			name="com.wymall.test.testcases.monthticket.monthTicketCertifi.MonthTicketCertifiPage_001_saveRuleManager_Test" />
-	</classes>
+			name="com.wymall.test.testcases.system.user.UserPage_001_addUser_Test" />
+		<class
+			name="com.wymall.test.testcases.system.user.UserPage_002_setRole_Test" />
+		<class
+			name="com.wymall.test.testcases.system.user.UserPage_003_setParkingGroup_Test" />
+		<class
+			name="com.wymall.test.testcases.system.user.UserPage_004_editPassword_Test" />
+		<class
+			name="com.wymall.test.testcases.system.user.UserPage_005_editUser_Test" />
+		<class
+			name="com.wymall.test.testcases.system.user.UserPage_006_delUser_Test" />
+		</classes>
 	</test>
-	
-	
+
 	
 	<listeners>
 		<!-- arrow插件实现用例失败重跑以及生成测试报告 -->

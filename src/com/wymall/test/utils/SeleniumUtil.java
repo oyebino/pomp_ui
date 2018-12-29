@@ -999,7 +999,7 @@ public class SeleniumUtil {
 	 */
 	public void loadPage(){
 		waitMilliSecond(500);
-		for(int i=1;i<60;i++){
+		for(int i=1;i<180;i++){
 			if(driver.findElement(By.xpath("//*[@id='app']/div[@class='ake_loading']")).isDisplayed()){
 				waitMilliSecond(250);
 			}
@@ -1538,7 +1538,7 @@ public class SeleniumUtil {
 	 */
 	public void sendCoupon(String FUNCTION_NAME,String CASE_NAME,String carNum) {
 		try {
-			switchToWindow("登录", "http://test01.yidianting.com.cn/mgr-weixin/passport/signin.do");
+			switchToWindow("登录", "http://mgr-weixin.k8s.yidianting.com.cn/mgr-weixin/home.do");
 			// 登录商家
 			findElementBy(By.xpath("//input[@id='phone']")).sendKeys("13800138001");
 			findElementBy(By.xpath("//input[@id='password']")).sendKeys("123456");
