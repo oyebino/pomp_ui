@@ -24,17 +24,15 @@
 	<test name="D_system" preserve-order="true">
 	<classes preserve-order="true">
 		<class
-			name="com.wymall.test.testcases.system.user.UserPage_001_addUser_Test" />
+			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_001_addParkingGroup_Test" />  
 		<class
-			name="com.wymall.test.testcases.system.user.UserPage_002_setRole_Test" />
+			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_002_buidingParking_Test" />
 		<class
-			name="com.wymall.test.testcases.system.user.UserPage_003_setParkingGroup_Test" />
+			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_003_checkUser_Test" />
 		<class
-			name="com.wymall.test.testcases.system.user.UserPage_004_editPassword_Test" />
+			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_004_editParkingGroup_Test" />
 		<class
-			name="com.wymall.test.testcases.system.user.UserPage_005_editUser_Test" />
-		<class
-			name="com.wymall.test.testcases.system.user.UserPage_006_delUser_Test" />
+			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_005_delParkingGroup_Test" />	
 		</classes>
 	</test>
 
