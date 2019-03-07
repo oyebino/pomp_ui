@@ -21,20 +21,183 @@
 	<parameter name="waitMillisecondsForAlert" value="40000" />
 
 	<!-- 定义测试模块，用test标签包围 -->
-	<test name="D_system" preserve-order="true">
+	<!-- <test name="A_impormationSearch" preserve-order="true">
 	<classes preserve-order="true">
-		<class
-			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_001_addParkingGroup_Test" />  
-		<class
-			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_002_buidingParking_Test" />
-		<class
-			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_003_checkUser_Test" />
-		<class
-			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_004_editParkingGroup_Test" />
-		<class
-			name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_005_delParkingGroup_Test" />	
-		</classes>
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_001_checkInsideCar_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_002_checkChargeBill_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_003_checkLeaveCar_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_004_abnormalInsideCar_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_005_adjustCarWaterNum_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_006_exportInsideCar_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_007_checkLeaveCarDetail_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_008_exportChargeBill_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_009_exportAbnormalCarCome_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_010_exportNoSystemOpening_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_011_exportArrearageCar_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_012_exportAbnormalPhoto_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_013_exportAdjustWater_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_014_filterInsideCar_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_015_filterLeaveCar_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_016_filterChargeBill_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_017_filterAbnormalCarCome_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_018_filterNoSystemOpening_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_019_filterArrearageCar_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_020_filterAbnormalPhoto_Test" />
+		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_021_filterAdjustWater_Test" />
+	</classes>
+	</test> 
+	
+	<test name="B_PakringOperation-carTypeManage" preserve-order="true">
+	<classes preserve-order="true">
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_001_addVisitorCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_002_filterVisitorCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_003_editVisitorCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_004_delVisitorCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_005_exportVisitorCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_006_addBlacklistCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_007_filterBlacklistCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_008_editBlacklistCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_009_delBlacklistCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_010_exportBlacklistCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_011_addSpecialTypeCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_012_updateInformation_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_013_editSpecialTypeCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_014_delSpecialTypeCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_015_exportEmergencyCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_016_addEmergencyCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_017_setEmergencyCarWarn_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_018_editEmergencyCar_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_019_delEmergencyCar_Test" />
+	</classes>
+	</test>-->
+	
+	<test name="C_pakringOperation-MonthTicketManage" preserve-order="true">
+	<classes preserve-order="true">
+		<!-- <class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_001_addTicketBill_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_002_renewMoney_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_003_extendTime_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_004_refundMoney_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_005_ImportTicketBill_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_006_filterTicketBill_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_007_batchRenewMoney_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_008_batchRefundMoney_Test" /> -->
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_009_checkTicketBillDetail_Test" />
+		<!-- <class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_001_saveRuleManager_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_002_addTicketCertifi_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_003_editTicketCertifi_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_004_filterTicketCertifi_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_005_checkTicketCertifi_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_006_checkCertifiRule_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_007_delTicketCertifi_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_001_addInternalTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_002_InternalTicketUpLowerline_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_003_editInternalTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_004_delInternalTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_005_addExternalTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_006_externalTicketUpLowerline_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_007_editExternalTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_008_checkSupperParking_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_009_filterMonthTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_010_updateInformation_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_011_delExternalTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_012_addInternalTicketCloud_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_013_TicketUpLowerlineCloud_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_014_editInternalTicketCloud_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_015_delInternalTicketCloud_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_016_addInternalTicketWayside_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_017_TicketUpLowerlineWayside_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_018_editInternalTicketWayside_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_019_delInternalTicketWayside_Test" /> -->
+	</classes>
 	</test>
+	
+	<!-- <test name="D_PakringOperation-parkingPersonal" preserve-order="true">
+	<classes preserve-order="true">
+		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_001_addMinProUser_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_002_setPower_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_003_editUser_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_004_setFrozen_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_005_setStartuse_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_006_delMinProUser_Test" />
+	</classes>
+	</test>
+	
+	<test name="E_PakringOperation-UpgradeService" preserve-order="true">
+	<classes preserve-order="true">
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_001_addPayVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_002_editPayVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_003_setStratup_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_004_setStop_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_005_filterPayVorcher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_006_delPayVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_007_downloadQRcode_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_008_exportVoucherRecord_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_001_addBussiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_002_setStratup_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_003_setStop_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_004_editBusiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_005_delBusiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_006_importBusiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_007_exportBusiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_001_addBookingRule_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_002_editBookingRule_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_003_delBookingRule_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_001_addCenduty_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_002_editCenduty_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_003_setfrozenCenduty_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_004_setStartCenduty_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_005_delCenduty_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_001_addPosUser_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_002_editPosUser_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_003_setPosUserPower_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_004_delPosUser_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_003_ScoreConfigSetStop_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_001_addScoreConfig_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_002_editScoreConfig_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_005_delScoreConfig_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_004_ScoreConfigSetStratup_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_006_exportScoreWaterNum_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_007_exportScoreReport_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_008_updateScoreReport_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_001_addSellTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_002_returnVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_003_batchSellTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_004_exportTicketPage_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_005_exportBusinessTicketCode_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_006_batchReturnVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_007_exportSellRecord_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sendRecord.SendRecordPage_001_exportSendRecordList_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sendRecord.SendRecordPage_002_checkSendRecord_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_001_addPayVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_002_editPayVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_003_setStop_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_004_setStratup_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_005_checkVorcherParking_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_006_delPayVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_001_exportUseRecord_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_002_checkUseRecord_Test" />
+	</classes>
+	</test>
+	
+	<test name="F_system" preserve-order="true">
+	<classes preserve-order="true">
+		<class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_001_addParkingGroup_Test" />
+		<class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_002_buidingParking_Test" />
+		<class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_003_checkUser_Test" />
+		<class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_004_editParkingGroup_Test" />
+		<class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_005_delParkingGroup_Test" />
+		<class name="com.wymall.test.testcases.system.role.RolePage_001_addRoleSuccess_Test" />
+		<class name="com.wymall.test.testcases.system.role.RolePage_002_settingRole_Test" />
+		<class name="com.wymall.test.testcases.system.role.RolePage_003_editRole_Test" />
+		<class name="com.wymall.test.testcases.system.role.RolePage_004_delRoleSuccess_Test" />
+		<class name="com.wymall.test.testcases.system.user.UserPage_001_addUser_Test" />
+		<class name="com.wymall.test.testcases.system.user.UserPage_002_setRole_Test" />
+		<class name="com.wymall.test.testcases.system.user.UserPage_003_setParkingGroup_Test" />
+		<class name="com.wymall.test.testcases.system.user.UserPage_004_editPassword_Test" />
+		<class name="com.wymall.test.testcases.system.user.UserPage_005_editUser_Test" />
+		<class name="com.wymall.test.testcases.system.user.UserPage_006_delUser_Test" />
+	</classes>
+	</test> -->
 
 	
 	<listeners>

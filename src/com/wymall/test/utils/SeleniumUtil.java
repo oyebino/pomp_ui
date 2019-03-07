@@ -207,6 +207,15 @@ public class SeleniumUtil {
 	 * 获得元素的文本
 	 * */
 	public String getText(By elementLocator) {
+		for(int i=0;i<20;i++){
+			String txt = driver.findElement(elementLocator).getText().trim();
+			if(txt.contains("数据加载中...")){
+				waitMilliSecond(1000);
+				}
+			else{
+				return driver.findElement(elementLocator).getText().trim();
+			}
+		}
 		return driver.findElement(elementLocator).getText().trim();
 	}
 
@@ -329,6 +338,7 @@ public class SeleniumUtil {
 	 * 判断文本是不是包含需求要求的文本一致
 	 * **/
 	public void isTextCorrect(String actual, String expected) {
+		waitMilliSecond(1000);
 		try {
 			Assert.assertTrue(actual.contains(expected));
 		} catch (AssertionError e) {
@@ -1349,6 +1359,7 @@ public class SeleniumUtil {
 		try{
 		String xpathdiv = by.toString().split(":")[1].trim() + "//span[contains(text(),'" + value + "')]/../../..//span[@class='el-checkbox__inner']";
 		WebElement b = driver.findElement(By.xpath(xpathdiv));
+		waitForElementToLoad(10, by);
 		waitMilliSecond(500);
 		b.click();
 		}catch(Exception e ){
@@ -1532,6 +1543,15 @@ public class SeleniumUtil {
 				+ "setTimeout(function(){element.setAttribute('style', original_style);}, 1000);", findElementBy(by));
 		waitMilliSecond(1000);
 	}
+	
+	/**
+	 * 
+	 */
+	public void loginAgain(String user,String pwd){
+		switchToWindow("停车场运营管理系统","http://mgr.k8s.yidianting.com.cn/#/");
+		loginPomp(user,pwd);
+	}
+	
 	
 	/**
 	 * 发放商家券

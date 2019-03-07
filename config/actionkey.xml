@@ -51,6 +51,7 @@
 		<ACTION number="48" name="检查列表的文本" class="com.wymall.test.utils.actions.impl.CheckCommonTableText"></ACTION>
 		<ACTION number="49" name="高亮元素" class="com.wymall.test.utils.actions.impl.HighlightElement"></ACTION>
 		<ACTION number="50" name="创建月票号" class="com.wymall.test.utils.actions.impl.CreateMonthTicketNum"></ACTION>
-		<ACTION number="51" name="发放商家劵" class="com.wymall.test.utils.actions.impl.SendCoupon"></ACTION>
+		<ACTION number="51" name="发放商家券" class="com.wymall.test.utils.actions.impl.SendCoupon"></ACTION>
+		<ACTION number="52" name="再次登录" class="com.wymall.test.utils.actions.impl.LoginAgain"></ACTION>
 	</ACTIONS>
 </ROOT>
