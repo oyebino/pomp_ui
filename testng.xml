@@ -21,7 +21,7 @@
 	<parameter name="waitMillisecondsForAlert" value="40000" />
 
 	<!-- 定义测试模块，用test标签包围 -->
-	<!-- <test name="A_impormationSearch" preserve-order="true">
+	<test name="A_impormationSearch" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_001_checkInsideCar_Test" />
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_002_checkChargeBill_Test" />
@@ -69,20 +69,20 @@
 		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_018_editEmergencyCar_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_019_delEmergencyCar_Test" />
 	</classes>
-	</test>-->
+	</test>
 	
 	<test name="C_pakringOperation-MonthTicketManage" preserve-order="true">
 	<classes preserve-order="true">
-		<!-- <class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_001_addTicketBill_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_001_addTicketBill_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_002_renewMoney_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_003_extendTime_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_004_refundMoney_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_005_ImportTicketBill_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_006_filterTicketBill_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_007_batchRenewMoney_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_008_batchRefundMoney_Test" /> -->
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_008_batchRefundMoney_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_009_checkTicketBillDetail_Test" />
-		<!-- <class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_001_saveRuleManager_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_001_saveRuleManager_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_002_addTicketCertifi_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_003_editTicketCertifi_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_004_filterTicketCertifi_Test" />
@@ -107,11 +107,11 @@
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_016_addInternalTicketWayside_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_017_TicketUpLowerlineWayside_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_018_editInternalTicketWayside_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_019_delInternalTicketWayside_Test" /> -->
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_019_delInternalTicketWayside_Test" />
 	</classes>
 	</test>
 	
-	<!-- <test name="D_PakringOperation-parkingPersonal" preserve-order="true">
+	<test name="D_PakringOperation-parkingPersonal" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_001_addMinProUser_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_002_setPower_Test" />
@@ -197,7 +197,7 @@
 		<class name="com.wymall.test.testcases.system.user.UserPage_005_editUser_Test" />
 		<class name="com.wymall.test.testcases.system.user.UserPage_006_delUser_Test" />
 	</classes>
-	</test> -->
+	</test>
 
 	
 	<listeners>
