@@ -1011,7 +1011,7 @@ public class SeleniumUtil {
 		waitMilliSecond(500);
 		for(int i=1;i<180;i++){
 			if(driver.findElement(By.xpath("//*[@id='app']/div[@class='ake_loading']")).isDisplayed()){
-				waitMilliSecond(250);
+				waitMilliSecond(500);
 			}
 			else {
 		//		logger.info("页面加载完成");
@@ -1288,6 +1288,7 @@ public class SeleniumUtil {
 	 */
 	public String waitElementAttribute(By by){
 		String text = "";
+		waitMilliSecond(1000);
 		for(int i=1;i<4;i++){
 			if(driver.findElement(by).isDisplayed()){
 				text = driver.findElement(by).getText();
@@ -1358,8 +1359,9 @@ public class SeleniumUtil {
 	public void clickTableCheckbox(By by,String value){
 		try{
 		String xpathdiv = by.toString().split(":")[1].trim() + "//span[contains(text(),'" + value + "')]/../../..//span[@class='el-checkbox__inner']";
+		waitForElementToLoad(10, By.xpath(xpathdiv));
 		WebElement b = driver.findElement(By.xpath(xpathdiv));
-		waitForElementToLoad(10, by);
+		//waitForElementToLoad(10, by);
 		waitMilliSecond(500);
 		b.click();
 		}catch(Exception e ){
@@ -1454,6 +1456,7 @@ public class SeleniumUtil {
 	        //判断title是否和handles当前的窗口相同
 	                if (driver.getTitle().contains(windowTitle)) { 
 	                	flag = true;
+	                	checkPageIsReady();	//等待页面加载完成
 	                    System.out.println("Switch to window: "  
 	                            + windowTitle + " successfully!");  
 	                    break;  
