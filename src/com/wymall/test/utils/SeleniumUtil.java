@@ -275,7 +275,6 @@ public class SeleniumUtil {
 	 * */
 	public void waitForElementToLoad(int timeOut, final By By) {
 	//	logger.info("开始查找元素[" + By + "]");
-		loadPage();
 		try {
 			(new WebDriverWait(driver, timeOut)).until(new ExpectedCondition<Boolean>() {
 
@@ -998,6 +997,7 @@ public class SeleniumUtil {
 
 	/**POMP管理系统登录操作*/
 	public void loginPomp(String username,String password){
+		loadPage();
 		type(By.xpath("//input[@placeholder='请输入账号']"),username);
 		type(By.xpath("//input[@placeholder='请输入密码']"),password);
 		type(By.xpath("//input[@placeholder='请输入验证码']"),"9999");
