@@ -19,9 +19,9 @@
 	<parameter name="timeOut" value="30" />
 	<!-- 这个是等待alert弹出的时间 单位毫秒 -->
 	<parameter name="waitMillisecondsForAlert" value="40000" />
-
+	
 	<!-- 定义测试模块，用test标签包围 -->
-	<!-- <test name="A_impormationSearch" preserve-order="true">
+	<test name="A_信息查询" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_001_checkInsideCar_Test" />
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_002_checkChargeBill_Test" />
@@ -47,7 +47,7 @@
 	</classes>
 	</test>
 	
-	<test name="B_PakringOperation-carTypeManage" preserve-order="true">
+	<test name="B_车场运营-车辆分类管理" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_001_addVisitorCar_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.CarTypeManage.carTypeManage.CarTypeManagePage_002_filterVisitorCar_Test" />
@@ -71,7 +71,7 @@
 	</classes>
 	</test>
 	
-	<test name="C_pakringOperation-MonthTicketManage" preserve-order="true">
+	<test name="C_车场运营-月票管理" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_001_addTicketBill_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_002_renewMoney_Test" />
@@ -110,9 +110,9 @@
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_018_editInternalTicketWayside_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_019_delInternalTicketWayside_Test" />
 	</classes>
-	</test> -->
+	</test>
 	
-	<test name="D_PakringOperation-parkingPersonal" preserve-order="true">
+	<test name="D_车场运营-人员管理" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_001_addMinProUser_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.ParkingManage.personalManage.PersonalManagePage_002_setPower_Test" />
@@ -123,7 +123,7 @@
 	</classes>
 	</test>
 	
-	<!-- <test name="E_PakringOperation-UpgradeService" preserve-order="true">
+	<test name="E_车场运营-增值服务" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_001_addPayVoucher_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_002_editPayVoucher_Test" />
@@ -184,7 +184,7 @@
 	</classes>
 	</test>
 	
-	<test name="F_system" preserve-order="true">
+	<test name="F_账号管理" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_001_addParkingGroup_Test" />
 		<class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_002_buidingParking_Test" />
@@ -200,11 +200,12 @@
 		<class name="com.wymall.test.testcases.system.user.UserPage_003_setParkingGroup_Test" />
 		<class name="com.wymall.test.testcases.system.user.UserPage_004_editPassword_Test" />
 		<class name="com.wymall.test.testcases.system.user.UserPage_005_editUser_Test" />
-		<class name="com.wymall.test.testcases.system.user.UserPage_006_delUser_Test" />
+		<class name="com.wymall.test.testcases.system.user.UserPage_006_loginPomp_Test" />
+		<class name="com.wymall.test.testcases.system.user.UserPage_007_delUser_Test" />
 	</classes>
 	</test>
 	
-	<test name="G_statisticalAnalysis" preserve-order="true">
+	<test name="G_统计分析" preserve-order="true">
 	<classes preserve-order="true">
 		<class name='com.wymall.test.testcases.statisticalAnalysis.businessmanReport.BusinessmanReportPage_001_checkBusinessmanReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.businessmanReport.BusinessmanReportPage_002_exportBusinessmanReport_Test' />
@@ -234,10 +235,8 @@
 		<class name='com.wymall.test.testcases.statisticalAnalysis.wayComeAndOutReport.WayComeAndOutReportPage_001_filterWayComeAndOutReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.wayComeAndOutReport.WayComeAndOutReportPage_002_exportWayComeAndOutReport_Test' />
 	</classes>
-	</test> -->
+	</test>
 
-
-	
 	<listeners>
 		<!-- arrow插件实现用例失败重跑以及生成测试报告 -->
 		<listener class-name="com.wymall.test.plugins.arrow.TestResultListener" />

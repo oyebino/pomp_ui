@@ -275,6 +275,7 @@ public class SeleniumUtil {
 	 * */
 	public void waitForElementToLoad(int timeOut, final By By) {
 	//	logger.info("开始查找元素[" + By + "]");
+		loadPage();
 		try {
 			(new WebDriverWait(driver, timeOut)).until(new ExpectedCondition<Boolean>() {
 
@@ -997,9 +998,9 @@ public class SeleniumUtil {
 
 	/**POMP管理系统登录操作*/
 	public void loginPomp(String username,String password){
-		type(By.xpath("//label[@for='username']//following-sibling::*[1]//input"),username);
-		type(By.xpath("//label[@for='password']//following-sibling::*[1]//input"),password);
-		type(By.xpath("//label[text()='验证码']/following-sibling::*[1]//input"),"9999");
+		type(By.xpath("//input[@placeholder='请输入账号']"),username);
+		type(By.xpath("//input[@placeholder='请输入密码']"),password);
+		type(By.xpath("//input[@placeholder='请输入验证码']"),"9999");
 	//	waitMilliSecond(10000);
 		click(By.xpath("//span[text()='登录']"));
 	}
@@ -1288,11 +1289,12 @@ public class SeleniumUtil {
 	 */
 	public String waitElementAttribute(By by){
 		String text = "";
-		waitMilliSecond(1000);
+		waitMilliSecond(500);
 		for(int i=1;i<4;i++){
 			if(driver.findElement(by).isDisplayed()){
 				text = driver.findElement(by).getText();
 				logger.info("页面元素:["+by+"]已变化");
+				waitMilliSecond(500);
 				return text;
 			}
 			else {
