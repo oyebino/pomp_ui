@@ -1289,13 +1289,15 @@ public class SeleniumUtil {
 	 */
 	public String waitElementAttribute(By by){
 		String text = "";
-		waitMilliSecond(500);
-		for(int i=1;i<4;i++){
+		waitMilliSecond(250);
+		for(int i=0;i<5;i++){
 			if(driver.findElement(by).isDisplayed()){
 				text = driver.findElement(by).getText();
 				logger.info("页面元素:["+by+"]已变化");
-				waitMilliSecond(500);
-				return text;
+				waitMilliSecond(250);
+				if(!text.equals("")){
+					return text;
+				}
 			}
 			else {
 				waitMilliSecond(250);
