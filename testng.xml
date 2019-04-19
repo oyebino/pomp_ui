@@ -21,7 +21,7 @@
 	<parameter name="waitMillisecondsForAlert" value="40000" />
 	
 	<!-- 定义测试模块，用test标签包围 -->
-	<!-- <test name="A_信息查询" preserve-order="true">
+	<test name="A_信息查询" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_001_checkInsideCar_Test" />
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_002_checkChargeBill_Test" />
@@ -182,7 +182,7 @@
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_001_exportUseRecord_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_002_checkUseRecord_Test" />
 	</classes>
-	</test> -->
+	</test>
 	
 	<test name="F_账号管理" preserve-order="true">
 	<classes preserve-order="true">
@@ -205,7 +205,7 @@
 	</classes>
 	</test> 
 	
-	<!-- <test name="G_统计分析" preserve-order="true">
+	<test name="G_统计分析" preserve-order="true">
 	<classes preserve-order="true">
 		<class name='com.wymall.test.testcases.statisticalAnalysis.businessmanReport.BusinessmanReportPage_001_checkBusinessmanReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.businessmanReport.BusinessmanReportPage_002_exportBusinessmanReport_Test' />
@@ -235,7 +235,7 @@
 		<class name='com.wymall.test.testcases.statisticalAnalysis.wayComeAndOutReport.WayComeAndOutReportPage_001_filterWayComeAndOutReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.wayComeAndOutReport.WayComeAndOutReportPage_002_exportWayComeAndOutReport_Test' />
 	</classes>
-	</test>-->
+	</test>
 
 	<listeners>
 		<!-- arrow插件实现用例失败重跑以及生成测试报告 -->
