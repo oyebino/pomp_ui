@@ -1,6 +1,8 @@
 package com.wymall.test.plugins.arrow;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,6 +26,8 @@ import org.testng.TestListenerAdapter;
 import com.google.common.base.Joiner;
 import com.wymall.test.utils.SeleniumUtil;
 import com.wymall.test.utils.actions.ParamConstant;
+
+import sun.misc.BASE64Encoder;
 
 /**
  * @author netease_arrow 描述：来自网易的截图插件
@@ -167,8 +171,10 @@ public class TestResultListener extends TestListenerAdapter {
 			//Reporter.log("");
 			// 把截图写入到Html报告中方便查看
 			String failScreenShotFile = filePath.replaceAll("\\\\", "/");
-			String screenShotListfiles = getListFloderPath(filePath).replaceAll("\\\\", "/");
-			Reporter.log("<img onclick=\"viewmore(event)\" data-preview=\"" + screenShotListfiles + "\" src=\"../../" + failScreenShotFile + "\"/>");
+			String failImgBase = getBase64(failScreenShotFile).replaceAll("\n", "").replaceAll("\r", "");
+	//		String screenShotListfiles = getListFloderPath(filePath).replaceAll("\\\\", "/");
+			String screenShotListfiles = getListFloderPath(filePath);
+			Reporter.log("<img onclick=\"viewmore(event)\" data-preview=\"" + screenShotListfiles + "\" src=\"" + failImgBase + "\"/>");
 		}
 	}
 	
@@ -180,14 +186,15 @@ public class TestResultListener extends TestListenerAdapter {
 			File[] files = file.listFiles();
 			for (File file2 : files) {
 				if (file2.isFile()) {
-					list.add("../../" + file2.toString());
+	//				list.add("../../" + file2.toString());
+					list.add(getBase64(file2.toString()).replaceAll("\n", "").replaceAll("\r", ""));
 				} 
 			}
 		}else{
 			return "文件不存在...";
 		}
 		if(!list.isEmpty()){
-			return Joiner.on(";").join(list);
+			return Joiner.on("%%").join(list);
 		}else{
 			return "没有截图文件...";
 		}
@@ -201,5 +208,34 @@ public class TestResultListener extends TestListenerAdapter {
 			return newPath.substring(0 , index + 1);
 		}
 		return newPath;
+	}
+	
+	/**
+	 * 获取图片base64编码
+	 * @param sysFile
+	 * @return
+	 */
+	public static String getBase64(String sysFile){
+        String imgStr = "";
+        try {
+	        File file = new File(sysFile);
+	        FileInputStream fis = new FileInputStream(file);
+	        byte[] buffer = new byte[(int) file.length()]; 
+            int offset = 0; 
+            int numRead = 0; 
+            while (offset < buffer.length && (numRead = fis.read(buffer, offset, buffer.length - offset)) >= 0) {
+                offset += numRead;
+            } 
+             
+            if (offset != buffer.length) { 
+                throw new IOException("Could not completely read file "+ file.getName()); 
+            } 
+            fis.close(); 
+            BASE64Encoder encoder = new BASE64Encoder();
+            imgStr = encoder.encode(buffer);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        	return "data:image/png;base64,"+imgStr;
 	}
 }
