@@ -83,6 +83,8 @@
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_008_batchRefundMoney_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_009_checkTicketBillDetail_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_010_checkStoreValueChargeRecord_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_011_exportTicketBillDetail_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_012_exporStoreValueChargeRecord_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_001_saveRuleManager_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_002_addTicketCertifi_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_003_editTicketCertifi_Test" />
@@ -133,27 +135,30 @@
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_006_delPayVoucher_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_007_downloadQRcode_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_008_exportVoucherRecord_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_001_addBussiness_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_002_setStratup_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_003_setStop_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_004_editBusiness_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_005_delBusiness_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_006_importBusiness_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_007_exportBusiness_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_001_addBookingRule_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_002_editBookingRule_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_003_delBookingRule_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_004_checkBookingWaterNum_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_005_checkBookingReport_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_006_exportBookingWaterNum_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_007_exportBookingReport_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_001_addCenduty_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_002_editCenduty_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_003_setfrozenCenduty_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_004_setStartCenduty_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_005_delCenduty_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_006_addVoiceAccount_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_007_editVoiceAccount_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.cendutySeat.CendutySeatPage_008_delVoiceAccount_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_001_addPosUser_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_002_editPosUser_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_003_setPosUserPower_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_004_delPosUser_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_005_exportParkingRecord_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_006_exportParkingOperation_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_007_exportEvenRecord_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_008_exportParkingViolateRecord_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.mobileUser.MobileUserPage_009_exportMobileReportRecord_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_003_ScoreConfigSetStop_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_001_addScoreConfig_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_002_editScoreConfig_Test" />
@@ -164,6 +169,24 @@
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_008_updateScoreReport_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_009_checkScoreWaterNum_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.scoreConfig.ScoreConfigPage_010_checkScoreReport_Test" />
+	</classes>
+	</test>
+	
+	<test name="F_车场运营-增值服务-电子优惠劵" preserve-order="true">
+	<classes preserve-order="true">
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_001_addBussiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_002_setStratup_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_003_setStop_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_004_editBusiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_005_delBusiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_006_importBusiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_007_exportBusiness_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_001_addPayVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_002_editPayVoucher_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_003_setStop_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_004_setStratup_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_005_checkVorcherParking_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_006_delPayVoucher_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_001_addSellTicket_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_002_returnVoucher_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_003_batchSellTicket_Test" />
@@ -173,18 +196,12 @@
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sell.SellPage_007_exportSellRecord_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sendRecord.SendRecordPage_001_exportSendRecordList_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.sendRecord.SendRecordPage_002_checkSendRecord_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_001_addPayVoucher_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_002_editPayVoucher_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_003_setStop_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_004_setStratup_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_005_checkVorcherParking_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.setVoucher.SetVoucherPage_006_delPayVoucher_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_001_exportUseRecord_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_002_checkUseRecord_Test" />
 	</classes>
 	</test>
 	
-	<test name="F_账号管理" preserve-order="true">
+	<test name="G_账号管理" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_001_addParkingGroup_Test" />
 		<class name="com.wymall.test.testcases.system.parking_group.Parking_groupPage_002_buidingParking_Test" />
@@ -205,7 +222,7 @@
 	</classes>
 	</test>
 	
-	<test name="G_统计分析" preserve-order="true">
+	<test name="H_统计分析" preserve-order="true">
 	<classes preserve-order="true">
 		<class name='com.wymall.test.testcases.statisticalAnalysis.businessmanReport.BusinessmanReportPage_001_checkBusinessmanReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.businessmanReport.BusinessmanReportPage_002_exportBusinessmanReport_Test' />
