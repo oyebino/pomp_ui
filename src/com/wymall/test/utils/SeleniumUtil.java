@@ -1565,7 +1565,7 @@ public class SeleniumUtil {
 	 */
 	public void sendCoupon(String FUNCTION_NAME,String CASE_NAME,String carNum) {
 		try {
-			switchToWindow("登录", "http://mgr-weixin.k8s.yidianting.com.cn/mgr-weixin/home.do");
+			switchToWindow("登录", "https://ydtw.k8s.yidianting.com.cn/mgr-weixin/home.do");
 			// 登录商家
 			findElementBy(By.xpath("//input[@id='phone']")).sendKeys("13800138001");
 			findElementBy(By.xpath("//input[@id='password']")).sendKeys("123456");
