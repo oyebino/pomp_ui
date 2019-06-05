@@ -338,7 +338,7 @@ public class SeleniumUtil {
 	 * 判断文本是不是包含需求要求的文本一致
 	 * **/
 	public void isTextCorrect(String actual, String expected) {
-		waitMilliSecond(1000);
+		waitMilliSecond(500);
 		try {
 			Assert.assertTrue(actual.contains(expected));
 		} catch (AssertionError e) {
@@ -1016,6 +1016,7 @@ public class SeleniumUtil {
 			}
 			else {
 		//		logger.info("页面加载完成");
+				waitMilliSecond(500);
 				break;
 			}
 		}
@@ -1290,17 +1291,17 @@ public class SeleniumUtil {
 	public String waitElementAttribute(By by){
 		String text = "";
 		waitMilliSecond(250);
-		for(int i=0;i<5;i++){
+		for(int i=0;i<15;i++){
 			if(driver.findElement(by).isDisplayed()){
+				waitMilliSecond(500);
 				text = driver.findElement(by).getText();
 				logger.info("页面元素:["+by+"]已变化");
-				waitMilliSecond(250);
 				if(!text.equals("")){
 					return text;
 				}
 			}
 			else {
-				waitMilliSecond(250);
+				waitMilliSecond(500);
 			}
 		}
 		text = driver.findElement(by).getAttribute("innerText");

@@ -73,7 +73,7 @@
 	
 	<test name="C_车场运营-月票管理" preserve-order="true">
 	<classes preserve-order="true">
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_001_addTicketBill_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_001_addTicketBill_Test" /> 
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_002_renewMoney_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_003_extendTime_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_004_refundMoney_Test" />
