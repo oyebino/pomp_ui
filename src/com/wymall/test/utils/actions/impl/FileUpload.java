@@ -18,7 +18,7 @@ public class FileUpload implements ActionType {
 		// TODO Auto-generated method stub
 		SeleniumUtil seleniumUtil = (SeleniumUtil) parms.get(ParamConstant.SELENIUM_UTIL);
 		String testData = (String) parms.get(ParamConstant.TEST_DATA);
-		String uploadValues[] = testData.split(",");
+		String uploadValues[] = testData.split(";");
 		
 		seleniumUtil.handleUpload(uploadValues[0], new File(uploadValues[1]));
 	}

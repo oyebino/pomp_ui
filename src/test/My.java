@@ -26,8 +26,9 @@ public class My {
 	}
 
 	public static void main(String[] args) {
-		WebDriver driver = null;
-		getChromeDriver(driver).get("https://www.baidu.com");
+		String a ="1;2;5;7;8;9";
+		String b[] = a.split(";");
+		System.out.println(b[3]);
 	}
 
 }

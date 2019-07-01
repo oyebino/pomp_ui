@@ -73,7 +73,7 @@
 	
 	<test name="C_车场运营-月票管理" preserve-order="true">
 	<classes preserve-order="true">
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_001_addTicketBill_Test" /> 
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_001_addTicketBill_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_002_renewMoney_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_003_extendTime_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketBill.MonthTicketBillPage_004_refundMoney_Test" />
@@ -93,16 +93,12 @@
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_006_checkCertifiRule_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketCertifi.MonthTicketCertifiPage_007_delTicketCertifi_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_001_addInternalTicket_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_002_InternalTicketUpLowerline_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_002_InternalTicketUpLowerline_Test" />  
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_003_editInternalTicket_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_004_delInternalTicket_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_005_addExternalTicket_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_006_externalTicketUpLowerline_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_007_editExternalTicket_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_008_checkSupperParking_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_009_filterMonthTicket_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_010_updateInformation_Test" />
-		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_011_delExternalTicket_Test" />
+		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_004_delInternalTicket_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_012_addInternalTicketCloud_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_013_TicketUpLowerlineCloud_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.MonthTicketManage.monthTicketManager.MonthTicketManagerPage_014_editInternalTicketCloud_Test" />

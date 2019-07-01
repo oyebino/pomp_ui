@@ -224,6 +224,13 @@ public class SeleniumUtil {
 	 * */
 	public String getAttributeText(By elementLocator, String attribute) {
 		return driver.findElement(elementLocator).getAttribute(attribute).trim();
+//		try{
+//			String txt = driver.findElement(elementLocator).getAttribute(attribute).trim();
+//			return txt;
+//		}catch (Exception e){
+//			return "null";
+//		}
+//		
 	}
 
 	/**
@@ -798,8 +805,8 @@ public class SeleniumUtil {
 	 *  */
 	public void CheckBoxSelectedTree(By byElement, String value, String flag) {
 		try {
-			String xpathvalue = byElement.toString().split("xpath:")[1].trim() + "//span[text()='" + value
-					+ "']/../preceding-sibling::*[1]";
+			String xpathvalue = byElement.toString().split("xpath:")[1].trim() + "//span[text()=' " + value
+					+ "' or text()='"+ value + "']/../preceding-sibling::*[1]";
 			//等待选择元素的加载
 			for(int i = 0; i < 5 ; i++){
 				if(findElementBy(byElement).getText().equals("")){
@@ -1291,7 +1298,7 @@ public class SeleniumUtil {
 	public String waitElementAttribute(By by){
 		String text = "";
 		waitMilliSecond(250);
-		for(int i=0;i<15;i++){
+		for(int i=0;i<10;i++){
 			if(driver.findElement(by).isDisplayed()){
 				waitMilliSecond(500);
 				text = driver.findElement(by).getText();
