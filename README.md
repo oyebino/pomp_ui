@@ -27,11 +27,13 @@
 
   ## 说明
 1. 该项目为maven项目，首次执行先把pom下的相关依赖包下载
+
 ```
 cd /d porject
 maven install
 ```
 2. res/page下创建userPage.xlsx文件，内容如下：
+![元素定位编写](http://172.18.3.40:3000/yeyb/UIAUTOTEST_POMP/src/master/img-folder/page.png)
 
 3. res/testcase 下编写用例use.xlsx，每个sheet为一个用例编号，内容如下：
 
