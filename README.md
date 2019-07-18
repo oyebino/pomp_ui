@@ -44,6 +44,7 @@ maven install
 ![用例表编写](http://172.18.3.40:3000/yeyb/UIAUTOTEST_POMP/src/master/img-folder/testcase.png)
 
 4. 执行util.TestCaseFactoryForAll.java 文件会按照testcase下的excel表的sheet生成src/text下的用例文件名字是sheet用例编号，如下：
+![生成java文件用例](http://172.18.3.40:3000/yeyb/UIAUTOTEST_POMP/src/master/img-folder/testcaseForJava.png)
 
 5. testng.xml配置，按要求配置对应参数 ，并添加运行的用例集，如：
 ```
