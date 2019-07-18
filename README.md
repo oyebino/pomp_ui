@@ -63,4 +63,4 @@ maven install
 
 7. 查看测试报告及日志文件
 用例执行完毕，会自动生成测试报告文件；用例失败会自动截图并将其展示在报告中，测试报告文件生成在项目根目录下test-out/html目录下report.html文件 报告展示如下：
-![用例表编写](http://172.18.3.40:3000/yeyb/UIAUTOTEST_POMP/src/master/img-folder/report.png)
+![报告](http://172.18.3.40:3000/yeyb/UIAUTOTEST_POMP/src/master/img-folder/report.png)
