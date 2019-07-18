@@ -38,13 +38,13 @@ cd /d porject
 maven install
 ```
 2. res/page下创建userPage.xlsx文件，内容如下：
-![元素定位编写](http://172.18.3.40:3000/yeyb/UIAUTOTEST_POMP/src/master/img-folder/page.png)
+![元素定位编写](img-folder/page.png)
 
 3. res/testcase 下编写用例use.xlsx，每个sheet为一个用例编号，内容如下：
-![用例表编写](http://172.18.3.40:3000/yeyb/UIAUTOTEST_POMP/src/master/img-folder/testcase.png)
+![用例表编写](img-folder/testcase.png)
 
 4. 执行util.TestCaseFactoryForAll.java 文件会按照testcase下的excel表的sheet生成src/text下的用例文件名字是sheet用例编号，如下：
-![生成java文件用例](http://172.18.3.40:3000/yeyb/UIAUTOTEST_POMP/src/master/img-folder/testcaseForJava.png)
+![生成java文件用例](img-folder/testcaseForJava.png)
 
 5. testng.xml配置，按要求配置对应参数 ，并添加运行的用例集，如：
 ```
@@ -64,4 +64,4 @@ maven install
 
 7. 查看测试报告及日志文件
 用例执行完毕，会自动生成测试报告文件；用例失败会自动截图并将其展示在报告中，测试报告文件生成在项目根目录下test-out/html目录下report.html文件 报告展示如下：
-![报告](http://172.18.3.40:3000/yeyb/UIAUTOTEST_POMP/src/master/img-folder/report.png)
+![报告](img-folder/report.png)
