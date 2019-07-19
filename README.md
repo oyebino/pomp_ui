@@ -1,4 +1,4 @@
-# UIAUTOTEST_POMP
+# UIAUTOTEST_POMP 自动化测试
 
 ## 工程目录
 
