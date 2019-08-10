@@ -852,8 +852,8 @@ public class SeleniumUtil {
 
 	public void CheckboxSelectList(By byElement, String value, String flag) {
 		try {
-			String xpathvalue = byElement.toString().split("xpath:")[1].trim() + "//span[contains(text(),'" + value
-					+ "')]/preceding-sibling::*[1]";
+			String xpathvalue = byElement.toString().split("xpath:")[1].trim() + "//span[text()='" + value
+					+ "']/preceding-sibling::*[1]";
 			WebElement element = findElementBy(By.xpath(xpathvalue));
 			if (flag.toLowerCase().equals("on")) {
 				if (element.getAttribute("class").contains("is-checked")) {
