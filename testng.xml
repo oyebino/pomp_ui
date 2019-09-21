@@ -165,7 +165,7 @@
 	</classes>
 	</test>
 	
-	<test name="F_车场运营-增值服务-电子优惠劵" preserve-order="true">
+	<!-- <test name="F_车场运营-增值服务-电子优惠劵" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_001_addBussiness_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.businessman.BusinessmanPage_002_setStratup_Test" />
@@ -194,7 +194,7 @@
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_001_exportUseRecord_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_002_checkUseRecord_Test" />
 	</classes>
-	</test>
+	</test> -->
 	
 	<test name="G_账号管理" preserve-order="true">
 	<classes preserve-order="true">

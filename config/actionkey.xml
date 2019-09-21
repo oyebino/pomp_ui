@@ -53,5 +53,6 @@
 		<ACTION number="50" name="创建月票号" class="com.wymall.test.utils.actions.impl.CreateMonthTicketNum"></ACTION>
 		<ACTION number="51" name="发放商家券" class="com.wymall.test.utils.actions.impl.SendCoupon"></ACTION>
 		<ACTION number="52" name="再次登录" class="com.wymall.test.utils.actions.impl.LoginAgain"></ACTION>
+		<ACTION number="53" name="创建用户" class="com.wymall.test.utils.actions.impl.CreateUserName"></ACTION>
 	</ACTIONS>
 </ROOT>

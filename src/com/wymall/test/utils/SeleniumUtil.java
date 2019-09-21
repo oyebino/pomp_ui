@@ -501,6 +501,13 @@ public class SeleniumUtil {
 		waitMilliSecond(500);
 		List<WebElement> objs =driver.findElements(by.xpath("//ul[@class='el-scrollbar__view el-select-dropdown__list']/li"));
 		for(WebElement obj:objs){
+			try{
+				if(obj.findElement(by.tagName("p")).isDisplayed()){
+					obj = obj.findElement(by.tagName("p"));
+				}
+			}catch(Exception e){
+			
+			}
 			if(obj.getText().trim().equals(text)){
 				obj.click();
 				loadPage();
