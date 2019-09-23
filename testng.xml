@@ -21,7 +21,7 @@
 	<parameter name="waitMillisecondsForAlert" value="40000" />
 	
 	<!-- 定义测试模块，用test标签包围 -->
-	<!-- <test name="A_信息查询" preserve-order="true">
+	<test name="A_信息查询" preserve-order="true">
 	<classes preserve-order="true">
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_001_checkInsideCar_Test" />
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_002_checkChargeBill_Test" />
@@ -45,7 +45,7 @@
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_020_filterAbnormalPhoto_Test" />
 		<class name="com.wymall.test.testcases.impormationSearch.carStatus.CarStatusPage_021_filterAdjustWater_Test" />
 	</classes>
-	</test> -->
+	</test>
 	
 	<!-- <test name="B_车场运营-车辆分类管理" preserve-order="true">
 	<classes preserve-order="true">
