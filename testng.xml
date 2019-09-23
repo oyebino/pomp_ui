@@ -194,7 +194,7 @@
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_001_exportUseRecord_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_002_checkUseRecord_Test" />
 	</classes>
-	</test>
+	</test> -->
 	
 	<test name="G_账号管理" preserve-order="true">
 	<classes preserve-order="true">
@@ -215,12 +215,12 @@
 		<class name="com.wymall.test.testcases.system.user.UserPage_006_loginPomp_Test" />
 		<class name="com.wymall.test.testcases.system.user.UserPage_007_delUser_Test" />
 	</classes>
-	</test> -->
+	</test>
 	
 	<test name="H_统计分析" preserve-order="true">
 	<classes preserve-order="true">
 		<class name='com.wymall.test.testcases.statisticalAnalysis.businessmanReport.BusinessmanReportPage_001_checkBusinessmanReport_Test' />
-		<!-- <class name='com.wymall.test.testcases.statisticalAnalysis.businessmanReport.BusinessmanReportPage_002_exportBusinessmanReport_Test' />
+		<class name='com.wymall.test.testcases.statisticalAnalysis.businessmanReport.BusinessmanReportPage_002_exportBusinessmanReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.comeAndOutReport.ComeAndOutReportPage_001_checkComeAndOutReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.comeAndOutReport.ComeAndOutReportPage_002_exportComeAndOutReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.handoverReport.HandoverReportPage_001_exportHandoverReport_Test' />
@@ -244,7 +244,7 @@
 		<class name='com.wymall.test.testcases.statisticalAnalysis.wayChargeReport.WayChargeReportPage_001_filterWayChargeReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.wayChargeReport.WayChargeReportPage_002_exportWayChargeReport_Test' />
 		<class name='com.wymall.test.testcases.statisticalAnalysis.wayComeAndOutReport.WayComeAndOutReportPage_001_filterWayComeAndOutReport_Test' />
-		<class name='com.wymall.test.testcases.statisticalAnalysis.wayComeAndOutReport.WayComeAndOutReportPage_002_exportWayComeAndOutReport_Test' /> -->
+		<class name='com.wymall.test.testcases.statisticalAnalysis.wayComeAndOutReport.WayComeAndOutReportPage_002_exportWayComeAndOutReport_Test' />
 	</classes>
 	</test>
 
