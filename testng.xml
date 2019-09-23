@@ -194,7 +194,7 @@
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_001_exportUseRecord_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.useRecord.UseRecordPage_002_checkUseRecord_Test" />
 	</classes>
-	</test>
+	</test> -->
 	
 	<test name="G_账号管理" preserve-order="true">
 	<classes preserve-order="true">
@@ -215,7 +215,7 @@
 		<class name="com.wymall.test.testcases.system.user.UserPage_006_loginPomp_Test" />
 		<class name="com.wymall.test.testcases.system.user.UserPage_007_delUser_Test" />
 	</classes>
-	</test> -->
+	</test>
 	
 	<test name="H_统计分析" preserve-order="true">
 	<classes preserve-order="true">
