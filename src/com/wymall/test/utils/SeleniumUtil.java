@@ -1316,7 +1316,7 @@ public class SeleniumUtil {
 				}
 			}
 			else {
-				waitMilliSecond(500);
+				waitMilliSecond(250);
 			}
 		}
 		text = driver.findElement(by).getAttribute("innerText");
