@@ -1310,6 +1310,7 @@ public class SeleniumUtil {
 				waitMilliSecond(500);
 				text = driver.findElement(by).getText();
 				logger.info("页面元素:["+by+"]已变化");
+				logger.info(text);
 				if(!text.equals("")){
 					return text;
 				}
