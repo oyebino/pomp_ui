@@ -15,6 +15,7 @@ hs_err_pid*
 
 /data/impormationSearch
 /data/PakringOperation
+/data/system
 test-output
 target
 result
