@@ -1,2 +1,0 @@
-set JAVA_HOME=E:\jdk1.8.0
-mvn install
