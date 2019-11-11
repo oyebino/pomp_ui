@@ -53,7 +53,10 @@ class Mail():
         self.contents = [self.htmlBody, os.path.join(os.path.dirname(__file__), 'test-output\\html\\suite1_test1_results.html')]
 
     def send(self,receiver):
-        self.yag.send(to=receiver,subject = self.subject,contents = self.contents)
+        if "通过：3" in self.htmlBody:
+            pass
+        else:
+            self.yag.send(to=receiver,subject = self.subject,contents = self.contents)
 
 
 from twilio.rest import Client
@@ -71,7 +74,10 @@ class SMS():
         client = Client(sid, token)
         report = ",".join(MySpiderHtml().getAllData())
         body_message = "uiDaily自动化测试" + self.tm + " 测试结果为：【" + report + "】"
-        client.messages.create(body=body_message, from_='+12055284403', to=toPhone)
+        if "通过：3" in report:
+            pass
+        else:
+            client.messages.create(body=body_message, from_='+12055284403', to=toPhone)
 
 if __name__ == '__main__':
     # file = "F:\\AKETEST\\UIAUTOTEST_POMP\\test-output"  # 本机
