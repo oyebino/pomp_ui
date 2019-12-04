@@ -33,7 +33,7 @@ public class BaseParpare {
 
 
 	@BeforeClass
-//	@BeforeSuite
+//@BeforeSuite
 	/**启动浏览器并打开测试页面*/
 	public void startTest(ITestContext context) {
 		LogConfiguration.initLog(this.getClass().getName());
