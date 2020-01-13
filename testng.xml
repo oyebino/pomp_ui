@@ -129,7 +129,6 @@
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_004_setStop_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_005_filterPayVorcher_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_006_delPayVoucher_Test" />
-		<!-- <class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_007_downloadQRcode_Test" /> -->
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.activityVoucher.ActivityVoucherPage_008_exportVoucherRecord_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_001_addBookingRule_Test" />
 		<class name="com.wymall.test.testcases.PakringOperation.UpgradeService.carBookingRule.CarBookingRulePage_002_editBookingRule_Test" />
