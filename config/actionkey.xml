@@ -1,58 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ROOT>
-	<ACTIONS>
-		<ACTION number="1" name="打开链接" class="com.wymall.test.utils.actions.impl.OpenLink"></ACTION>
-		<ACTION number="2" name="导航链接" class="com.wymall.test.utils.actions.impl.NavigationLink"></ACTION>
-		<ACTION number="3" name="输入" class="com.wymall.test.utils.actions.impl.SetValue"></ACTION>
-		<ACTION number="4" name="点击" class="com.wymall.test.utils.actions.impl.Click"></ACTION>
-		<ACTION number="5" name="暂停" class="com.wymall.test.utils.actions.impl.Pause"></ACTION>
-		<ACTION number="6" name="等待元素" class="com.wymall.test.utils.actions.impl.WaitElement"></ACTION>
-		<ACTION number="7" name="查找元素(尝试3次)" class="com.wymall.test.utils.actions.impl.FindElement"></ACTION>
-		<ACTION number="8" name="清除" class="com.wymall.test.utils.actions.impl.Clean"></ACTION>
-		<ACTION number="9" name="进入iFrame" class="com.wymall.test.utils.actions.impl.SwitchToiFrame"></ACTION>
-		<ACTION number="10" name="跳出iFrame" class="com.wymall.test.utils.actions.impl.OutiFrame"></ACTION>
-		<ACTION number="11" name="选择下拉列表 - Text" class="com.wymall.test.utils.actions.impl.SelectListByText"></ACTION>
-		<ACTION number="12" name="选择下拉列表 - Index" class="com.wymall.test.utils.actions.impl.SelectListByIndex"></ACTION>
-		<ACTION number="13" name="选择下拉列表 - Value" class="com.wymall.test.utils.actions.impl.SelectListByValue"></ACTION>
-		<ACTION number="14" name="检查文本 - 属性" class="com.wymall.test.utils.actions.impl.CheckTextAttribute"></ACTION>
-		<ACTION number="15" name="获得网页标题" class="com.wymall.test.utils.actions.impl.CheckTitle"></ACTION>
-		<ACTION number="16" name="页面的URL是否正确" class="com.wymall.test.utils.actions.impl.CheckPageUrl"></ACTION>
-		<ACTION number="17" name="检查文本" class="com.wymall.test.utils.actions.impl.CheckText"></ACTION>
-		<ACTION number="18" name="进入Tab" class="com.wymall.test.utils.actions.impl.SwitchNewWindow"></ACTION>
-		<ACTION number="19" name="跳出Tab" class="com.wymall.test.utils.actions.impl.BackToOldWindow"></ACTION>
-		<ACTION number="20" name="接受alert弹窗" class="com.wymall.test.utils.actions.impl.AcceptPromptedAlertAfterWait"></ACTION>
-		<ACTION number="21" name="取消alert弹窗" class="com.wymall.test.utils.actions.impl.DismissPromptedAlertAfterWait"></ACTION>
-		<ACTION number="22" name="执行JS点击" class="com.wymall.test.utils.actions.impl.ExecuteJS_Click"></ACTION>
-		<ACTION number="23" name="刷新页面" class="com.wymall.test.utils.actions.impl.Refresh"></ACTION>
-		<ACTION number="24" name="前进页面" class="com.wymall.test.utils.actions.impl.PageForward"></ACTION>
-		<ACTION number="25" name="后退页面" class="com.wymall.test.utils.actions.impl.PageToBack"></ACTION>
-		<ACTION number="26" name="上传文件" class="com.wymall.test.utils.actions.impl.FileUpload"></ACTION>
-		<ACTION number="27" name="元素被启用" class="com.wymall.test.utils.actions.impl.ElementAble"></ACTION>
-		<ACTION number="28" name="元素未启用" class="com.wymall.test.utils.actions.impl.ElementEnalbe"></ACTION>
-		<ACTION number="29" name="验证首页菜单栏文本" class="com.wymall.test.utils.actions.impl.CheckMenusText"></ACTION>
-		<ACTION number="30" name="当前界面截图" class="com.wymall.test.utils.actions.impl.ScreenShot"></ACTION>
-		<ACTION number="31" name="储存数据变量" class="com.wymall.test.utils.actions.impl.Mem"></ACTION>
-		<ACTION number="32" name="储存页面变量" class="com.wymall.test.utils.actions.impl.MemPageEleValue"></ACTION>
-		<ACTION number="33" name="勾选checkbox" class="com.wymall.test.utils.actions.impl.CheckBoxSelectedTree"></ACTION>
-		<ACTION number="34" name="执行JS语句" class="com.wymall.test.utils.actions.impl.ExecuteJS"></ACTION>
-		<ACTION number="35" name="粘贴文本" class="com.wymall.test.utils.actions.impl.setAndctrlVClipboardData"></ACTION>
-		<ACTION number="36" name="按键TAB" class="com.wymall.test.utils.actions.impl.PressTabKey"></ACTION>
-		<ACTION number="37" name="移动鼠标悬浮" class="com.wymall.test.utils.actions.impl.MoveToElement"></ACTION>
-		<ACTION number="38" name="检查不包含文本" class="com.wymall.test.utils.actions.impl.NotCheckText"></ACTION>
-		<ACTION number="39" name="检查提示框文本" class="com.wymall.test.utils.actions.impl.CheckTipsText"></ACTION>
-		<ACTION number="40" name="选择单选按钮-value" class="com.wymall.test.utils.actions.impl.SingleChoose"></ACTION>
-		<ACTION number="41" name="关闭交易tab" class="com.wymall.test.utils.actions.impl.CloseAllTab"></ACTION>
-		<ACTION number="42" name="勾选表格checkbox" class="com.wymall.test.utils.actions.impl.ClickTableCheckbox"></ACTION>
-		<ACTION number="43" name="勾选checkbox链状" class="com.wymall.test.utils.actions.impl.CheckBoxSelectList"></ACTION>
-		<ACTION number="44" name="勾选日期表月份" class="com.wymall.test.utils.actions.impl.ClickDateTable"></ACTION>
-		<ACTION number="45" name="模拟进出场" class="com.wymall.test.utils.actions.impl.PassAndOut"></ACTION>
-		<ACTION number="46" name="缴费" class="com.wymall.test.utils.actions.impl.PayCharge"></ACTION>
-		<ACTION number="47" name="创建车牌" class="com.wymall.test.utils.actions.impl.CreateCarNum"></ACTION>
-		<ACTION number="48" name="检查列表的文本" class="com.wymall.test.utils.actions.impl.CheckCommonTableText"></ACTION>
-		<ACTION number="49" name="高亮元素" class="com.wymall.test.utils.actions.impl.HighlightElement"></ACTION>
-		<ACTION number="50" name="创建月票号" class="com.wymall.test.utils.actions.impl.CreateMonthTicketNum"></ACTION>
-		<ACTION number="51" name="发放商家券" class="com.wymall.test.utils.actions.impl.SendCoupon"></ACTION>
-		<ACTION number="52" name="再次登录" class="com.wymall.test.utils.actions.impl.LoginAgain"></ACTION>
-		<ACTION number="53" name="创建用户" class="com.wymall.test.utils.actions.impl.CreateUserName"></ACTION>
-	</ACTIONS>
+    <ACTIONS>
+        <ACTION number="1" name="打开链接" class="com.wymall.test.utils.actions.impl.OpenLink"></ACTION>
+        <ACTION number="2" name="导航链接" class="com.wymall.test.utils.actions.impl.NavigationLink"></ACTION>
+        <ACTION number="3" name="输入" class="com.wymall.test.utils.actions.impl.SetValue"></ACTION>
+        <ACTION number="4" name="点击" class="com.wymall.test.utils.actions.impl.Click"></ACTION>
+        <ACTION number="5" name="暂停" class="com.wymall.test.utils.actions.impl.Pause"></ACTION>
+        <ACTION number="6" name="等待元素" class="com.wymall.test.utils.actions.impl.WaitElement"></ACTION>
+        <ACTION number="7" name="查找元素(尝试3次)" class="com.wymall.test.utils.actions.impl.FindElement"></ACTION>
+        <ACTION number="8" name="清除" class="com.wymall.test.utils.actions.impl.Clean"></ACTION>
+        <ACTION number="9" name="进入iFrame" class="com.wymall.test.utils.actions.impl.SwitchToiFrame"></ACTION>
+        <ACTION number="10" name="跳出iFrame" class="com.wymall.test.utils.actions.impl.OutiFrame"></ACTION>
+        <ACTION number="11" name="选择下拉列表 - Text" class="com.wymall.test.utils.actions.impl.SelectListByText"></ACTION>
+        <ACTION number="12" name="选择下拉列表 - Index" class="com.wymall.test.utils.actions.impl.SelectListByIndex"></ACTION>
+        <ACTION number="13" name="选择下拉列表 - Value" class="com.wymall.test.utils.actions.impl.SelectListByValue"></ACTION>
+        <ACTION number="14" name="检查文本 - 属性" class="com.wymall.test.utils.actions.impl.CheckTextAttribute"></ACTION>
+        <ACTION number="15" name="获得网页标题" class="com.wymall.test.utils.actions.impl.CheckTitle"></ACTION>
+        <ACTION number="16" name="页面的URL是否正确" class="com.wymall.test.utils.actions.impl.CheckPageUrl"></ACTION>
+        <ACTION number="17" name="检查文本" class="com.wymall.test.utils.actions.impl.CheckText"></ACTION>
+        <ACTION number="18" name="进入Tab" class="com.wymall.test.utils.actions.impl.SwitchNewWindow"></ACTION>
+        <ACTION number="19" name="跳出Tab" class="com.wymall.test.utils.actions.impl.BackToOldWindow"></ACTION>
+        <ACTION number="20" name="接受alert弹窗"
+                class="com.wymall.test.utils.actions.impl.AcceptPromptedAlertAfterWait"></ACTION>
+        <ACTION number="21" name="取消alert弹窗"
+                class="com.wymall.test.utils.actions.impl.DismissPromptedAlertAfterWait"></ACTION>
+        <ACTION number="22" name="执行JS点击" class="com.wymall.test.utils.actions.impl.ExecuteJS_Click"></ACTION>
+        <ACTION number="23" name="刷新页面" class="com.wymall.test.utils.actions.impl.Refresh"></ACTION>
+        <ACTION number="24" name="前进页面" class="com.wymall.test.utils.actions.impl.PageForward"></ACTION>
+        <ACTION number="25" name="后退页面" class="com.wymall.test.utils.actions.impl.PageToBack"></ACTION>
+        <ACTION number="26" name="上传文件" class="com.wymall.test.utils.actions.impl.FileUpload"></ACTION>
+        <ACTION number="27" name="元素被启用" class="com.wymall.test.utils.actions.impl.ElementAble"></ACTION>
+        <ACTION number="28" name="元素未启用" class="com.wymall.test.utils.actions.impl.ElementEnalbe"></ACTION>
+        <ACTION number="29" name="验证首页菜单栏文本" class="com.wymall.test.utils.actions.impl.CheckMenusText"></ACTION>
+        <ACTION number="30" name="当前界面截图" class="com.wymall.test.utils.actions.impl.ScreenShot"></ACTION>
+        <ACTION number="31" name="储存数据变量" class="com.wymall.test.utils.actions.impl.Mem"></ACTION>
+        <ACTION number="32" name="储存页面变量" class="com.wymall.test.utils.actions.impl.MemPageEleValue"></ACTION>
+        <ACTION number="33" name="勾选checkbox" class="com.wymall.test.utils.actions.impl.CheckBoxSelectedTree"></ACTION>
+        <ACTION number="34" name="执行JS语句" class="com.wymall.test.utils.actions.impl.ExecuteJS"></ACTION>
+        <ACTION number="35" name="粘贴文本" class="com.wymall.test.utils.actions.impl.setAndctrlVClipboardData"></ACTION>
+        <ACTION number="36" name="按键TAB" class="com.wymall.test.utils.actions.impl.PressTabKey"></ACTION>
+        <ACTION number="37" name="移动鼠标悬浮" class="com.wymall.test.utils.actions.impl.MoveToElement"></ACTION>
+        <ACTION number="38" name="检查不包含文本" class="com.wymall.test.utils.actions.impl.NotCheckText"></ACTION>
+        <ACTION number="39" name="检查提示框文本" class="com.wymall.test.utils.actions.impl.CheckTipsText"></ACTION>
+        <ACTION number="40" name="选择单选按钮-value" class="com.wymall.test.utils.actions.impl.SingleChoose"></ACTION>
+        <ACTION number="41" name="关闭交易tab" class="com.wymall.test.utils.actions.impl.CloseAllTab"></ACTION>
+        <ACTION number="42" name="勾选表格checkbox" class="com.wymall.test.utils.actions.impl.ClickTableCheckbox"></ACTION>
+        <ACTION number="43" name="勾选checkbox链状" class="com.wymall.test.utils.actions.impl.CheckBoxSelectList"></ACTION>
+        <ACTION number="44" name="勾选日期表月份" class="com.wymall.test.utils.actions.impl.ClickDateTable"></ACTION>
+        <ACTION number="45" name="模拟进出场" class="com.wymall.test.utils.actions.impl.PassAndOut"></ACTION>
+        <ACTION number="46" name="缴费" class="com.wymall.test.utils.actions.impl.PayCharge"></ACTION>
+        <ACTION number="47" name="创建车牌" class="com.wymall.test.utils.actions.impl.CreateCarNum"></ACTION>
+        <ACTION number="48" name="检查列表的文本" class="com.wymall.test.utils.actions.impl.CheckCommonTableText"></ACTION>
+        <ACTION number="49" name="高亮元素" class="com.wymall.test.utils.actions.impl.HighlightElement"></ACTION>
+        <ACTION number="50" name="创建月票号" class="com.wymall.test.utils.actions.impl.CreateMonthTicketNum"></ACTION>
+        <ACTION number="51" name="发放商家券" class="com.wymall.test.utils.actions.impl.SendCoupon"></ACTION>
+        <ACTION number="52" name="再次登录" class="com.wymall.test.utils.actions.impl.LoginAgain"></ACTION>
+        <ACTION number="53" name="创建用户" class="com.wymall.test.utils.actions.impl.CreateUserName"></ACTION>
+    </ACTIONS>
 </ROOT>

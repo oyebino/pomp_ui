@@ -8,18 +8,18 @@ import com.wymall.test.utils.actions.ParamConstant;
 
 public class PayCharge implements ActionType {
 
-	@Override
-	public void doAction(Map parms) {
-		// TODO Auto-generated method stub
-		SeleniumUtil seleniumUtil = (SeleniumUtil) parms.get(ParamConstant.SELENIUM_UTIL);
-		String function_name = (String) parms.get(ParamConstant.FUNCTION_NAME);
-		String case_Name = (String) parms.get(ParamConstant.CASE_NAME);
-		String testData = (String) parms.get(ParamConstant.TEST_DATA);
-		String testData1 = testData.split(";")[0];
-		String testData2 = testData.split(";")[1];
-		
-		
-		seleniumUtil.payCharge(testData1,testData2,function_name,case_Name);
-	}
+    @Override
+    public void doAction(Map parms) {
+        // TODO Auto-generated method stub
+        SeleniumUtil seleniumUtil = (SeleniumUtil) parms.get(ParamConstant.SELENIUM_UTIL);
+        String function_name = (String) parms.get(ParamConstant.FUNCTION_NAME);
+        String case_Name = (String) parms.get(ParamConstant.CASE_NAME);
+        String testData = (String) parms.get(ParamConstant.TEST_DATA);
+        String testData1 = testData.split(";")[0];
+        String testData2 = testData.split(";")[1];
+
+
+        seleniumUtil.payCharge(testData1, testData2, function_name, case_Name);
+    }
 
 }

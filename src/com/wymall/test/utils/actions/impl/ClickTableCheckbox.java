@@ -8,18 +8,18 @@ import com.wymall.test.utils.actions.ActionType;
 import com.wymall.test.utils.actions.ParamConstant;
 
 public class ClickTableCheckbox implements ActionType {
-	/**
-	 * 	勾选表格的checkbox
-	 */
-	@Override
-	public void doAction(Map parms) {
-		// TODO Auto-generated method stub
-		SeleniumUtil seleniumUtil = (SeleniumUtil) parms.get(ParamConstant.SELENIUM_UTIL);
-		String testData = (String) parms.get(ParamConstant.TEST_DATA);
-		String locatorType=(String) parms.get(ParamConstant.LOCATOR_TYPE);
-		String locatorValue=(String) parms.get(ParamConstant.LOCATOR_VALUE);
-		
-		seleniumUtil.clickTableCheckbox(SuperAction.getLocateWay(locatorType, locatorValue),testData);
-	}
+    /**
+     * 勾选表格的checkbox
+     */
+    @Override
+    public void doAction(Map parms) {
+        // TODO Auto-generated method stub
+        SeleniumUtil seleniumUtil = (SeleniumUtil) parms.get(ParamConstant.SELENIUM_UTIL);
+        String testData = (String) parms.get(ParamConstant.TEST_DATA);
+        String locatorType = (String) parms.get(ParamConstant.LOCATOR_TYPE);
+        String locatorValue = (String) parms.get(ParamConstant.LOCATOR_VALUE);
+
+        seleniumUtil.clickTableCheckbox(SuperAction.getLocateWay(locatorType, locatorValue), testData);
+    }
 
 }
